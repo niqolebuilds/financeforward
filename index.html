@@ -1,189 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Finance Forward — Issue 01</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap');
-
-  body {
-    margin: 0;
-    padding: 40px 16px;
-    background: #EAEDF5;
-    font-family: 'Aptos', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
-  }
-  .wrap {
-    max-width: 640px;
-    margin: 0 auto;
-    background: #FFFFFF;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 6px 28px rgba(0,39,127,0.12);
-  }
-  .masthead {
-    background: #00277F;
-    padding: 28px 36px 24px;
-    color: #FFFFFF;
-  }
-  .masthead-title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 26px;
-    letter-spacing: 1px;
-    margin: 0;
-  }
-  .masthead-tag {
-    font-size: 13px;
-    color: #C9D4F2;
-    margin-top: 6px;
-  }
-  .goldbar { height: 4px; background: #F0C157; }
-  .issue-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 14px 36px;
-    font-size: 11px;
-    letter-spacing: 1.5px;
-    color: #5E5E5E;
-    border-bottom: 1px solid #E1E5F0;
-    font-weight: 700;
-  }
-  .content { padding: 8px 36px 12px; }
-  h1.headline {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    color: #00277F;
-    line-height: 1.15;
-    margin: 22px 0 10px;
-  }
-  p.deck {
-    font-size: 15.5px;
-    color: #3A3A3A;
-    line-height: 1.55;
-    margin-bottom: 22px;
-  }
-  p.body-text {
-    font-size: 14.5px;
-    color: #2B2B2B;
-    line-height: 1.7;
-    margin: 0 0 16px;
-  }
-  h2.section {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 1.3px;
-    color: #B88A00;
-    text-transform: uppercase;
-    margin: 34px 0 12px;
-    padding-top: 22px;
-    border-top: 1px solid #E1E5F0;
-  }
-  .prompt-box {
-    background: #F4F6FB;
-    border-left: 4px solid #F0C157;
-    border-radius: 6px;
-    padding: 18px 20px;
-    font-size: 14px;
-    font-style: italic;
-    color: #00277F;
-    line-height: 1.6;
-    margin-bottom: 16px;
-  }
-  .stat-callout {
-    background: #00277F;
-    border-radius: 8px;
-    padding: 20px 22px;
-    color: #FFFFFF;
-    margin-bottom: 6px;
-  }
-  .stat-callout .num {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 34px;
-    color: #F0C157;
-    margin-bottom: 4px;
-  }
-  .stat-callout p {
-    font-size: 13.5px;
-    line-height: 1.6;
-    color: #DCE3F5;
-    margin: 0;
-  }
-  .rule-box {
-    background: #FFF7E6;
-    border: 1px solid #F0C157;
-    border-radius: 6px;
-    padding: 16px 20px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #00277F;
-    text-align: center;
-    margin: 10px 0 22px;
-  }
-  .footer {
-    background: #F4F6FB;
-    padding: 22px 36px 28px;
-    font-size: 12px;
-    color: #5E5E5E;
-    line-height: 1.7;
-  }
-  .footer strong { color: #00277F; }
-  .source-note {
-    font-size: 10.5px;
-    color: #8B8B8B;
-    margin-top: 4px;
-  }
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finance Forward — Agentic AI for Siloam Finance &amp; RCM</title>
+<meta name="description" content="Internal newsletter on agentic AI for the Siloam Hospitals finance and revenue-cycle team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body class="home">
+
+<header class="hero">
   <div class="wrap">
-    <div class="masthead">
-      <p class="masthead-title">FINANCE&nbsp;FORWARD</p>
-      <p class="masthead-tag">One AI idea every week. Building Siloam's AI-native Finance, together.</p>
-    </div>
-    <div class="goldbar"></div>
-    <div class="issue-row">
-      <span>ISSUE 01</span>
-      <span>JULY 9, 2026</span>
-    </div>
-
-    <div class="content">
-      <h1 class="headline">The Five-Minute Colleague</h1>
-      <p class="deck">This week, Finance Forward introduces the first tool inside Vanguard's governed catalog — and proves, on one real task, that it earns its seat at the table in under five minutes.</p>
-
-      <p class="body-text">At 4:47 on a Tuesday afternoon, an analyst on the FP&amp;A team pasted eleven lines of raw variance data into a chat window and typed one sentence describing what the commentary needed to say. At 4:51, she was editing a draft, not writing one from a blank page. Four minutes. That is the entire pitch for this issue — not a vision of the future, but a Tuesday that ended four minutes shorter than it used to.</p>
-
-      <h2 class="section">What's Actually Available, Starting Today</h2>
-      <p class="body-text">Your Vanguard-approved AI assistant is live and cleared for exactly this kind of work: drafting first-pass commentary, summarizing long documents, restructuring messy data into something presentable. It does not touch source systems, it does not see anything you don't paste into it, and it does not submit anything on your behalf. It drafts. You still sign.</p>
-      <p class="body-text">If that sounds like a small thing, it is — deliberately. Every capability Vanguard adds this year will be this specific and this bounded, because trust is built one correctly-scoped tool at a time, not with a single sweeping rollout.</p>
-
-      <h2 class="section">Try It Yourself</h2>
-      <p class="body-text">Open the assistant and paste this, adjusted to your own numbers:</p>
-      <div class="prompt-box">
-        "Here is this month's variance data for [cost center]: [paste rows]. Draft three sentences of commentary explaining the largest driver, in the tone we use for the monthly pack. Flag anything that looks like it needs a second look before I send it."
-      </div>
-      <p class="body-text">That's the whole prompt. Read the draft, correct what it gets wrong, send it in your own voice. The value isn't that it's right the first time — it's that editing is faster than authoring.</p>
-
-      <h2 class="section">By the Numbers</h2>
-      <div class="stat-callout">
-        <div class="num">30%</div>
-        <p>McKinsey's internal assistant, Lilli, sees weekly use from 75%+ of the firm's ~43,000 employees, averaging 17 uses per person per week, with reported time savings near 30% on the tasks it touches. Siloam is not McKinsey and Vanguard is not Lilli — the number worth taking isn't the 30%, it's that the habit, once formed, compounds weekly.</p>
-      </div>
-      <p class="source-note">Source: McKinsey &amp; Company reporting on Lilli internal usage, 2024–2025.</p>
-
-      <h2 class="section">One Thing to Remember</h2>
-      <div class="rule-box">AI drafts. You sign.</div>
-      <p class="body-text">That doesn't change this week, next quarter, or ever — it's the one rule every future issue of this newsletter will build on.</p>
-      <p class="body-text">Try it once this week on something low-stakes. Reply and tell us what happened, good or bad — Issue 03 is reserved for the first real stories from people who work down the hall from you, not from case studies.</p>
-    </div>
-
-    <div class="footer">
-      <strong>— Finance Forward</strong><br>
-      Next issue: July 16 — "The Five-Minute Ceiling"<br>
-      Vanguard Hack: December 2026. Details soon.
+    <span class="eyebrow">Siloam Hospitals · Finance &amp; Revenue Cycle</span>
+    <h1>Finance&nbsp;Forward</h1>
+    <p class="lede">A hopeful, human field guide to agentic AI — what it is, why finance is leading, and how we stay in control. Flagship issues first; alternate versions in the archive.</p>
+    <p class="mantra">“A chatbot answers; an agent acts.”</p>
+    <div class="hero-cta">
+      <a href="#foundations" class="btn btn-primary">Start reading</a>
+      <a href="archive/index.html" class="btn btn-ghost">Browse the archive</a>
     </div>
   </div>
+</header>
+<div id="foundations"></div>
+<section class="track track-teal">
+    <div class="wrap">
+      <div class="track-head">
+        <span class="track-tag">Understanding agents</span>
+        <h2>Foundations</h2>
+        <p class="track-blurb">Start here. What “agentic” actually means, why finance is out front, and what an agent is made of.</p>
+      </div>
+      <div class="cards"><a class="card accent-teal" href="issues/issue-1.html">
+    <div class="card-top">
+      <span class="issue-num">Issue 01</span>
+      <span class="pill pill-flag">Flagship</span>
+    </div>
+    <h3>Chatbot vs. Agent</h3>
+    <p class="deck">The one-line difference behind agentic AI — told through a Siloam denial, backed by the numbers, with how we'd actually run it.</p>
+    <span class="readmore">Read the flagship →</span>
+  </a>
+<a class="card accent-teal" href="issues/issue-2.html">
+    <div class="card-top">
+      <span class="issue-num">Issue 02</span>
+      <span class="pill pill-flag">Flagship</span>
+    </div>
+    <h3>Why Finance Is Leading</h3>
+    <p class="deck">Why our profession leads on agents, told through one billing floor, backed by the adoption and RCM numbers, with how we keep control.</p>
+    <span class="readmore">Read the flagship →</span>
+  </a>
+<a class="card accent-teal" href="issues/issue-3.html">
+    <div class="card-top">
+      <span class="issue-num">Issue 03</span>
+      <span class="pill pill-flag">Flagship</span>
+    </div>
+    <h3>Anatomy of an Agent</h3>
+    <p class="deck">Reasoning, memory, tools, autonomy — what each does, what it's worth, and how the human gate keeps it safe.</p>
+    <span class="readmore">Read the flagship →</span>
+  </a></div>
+    </div>
+  </section>
+<section class="track track-navy">
+    <div class="wrap">
+      <div class="track-head">
+        <span class="track-tag">Agents on our own turf</span>
+        <h2>Proof at Home</h2>
+        <p class="track-blurb">The idea, proven where we work — the revenue cycle, the month-end close, and the treasury–fraud–compliance back office.</p>
+      </div>
+      <div class="cards"><a class="card accent-navy" href="issues/issue-4.html">
+    <div class="card-top">
+      <span class="issue-num">Issue 04</span>
+      <span class="pill pill-flag">Flagship</span>
+    </div>
+    <h3>Agents in the Revenue Cycle</h3>
+    <p class="deck">A Siloam denials team's Monday, the 30–60% cost-to-collect case, and the human gate that keeps it safe.</p>
+    <span class="readmore">Read the flagship →</span>
+  </a>
+<a class="card accent-navy" href="issues/issue-5.html">
+    <div class="card-top">
+      <span class="issue-num">Issue 05</span>
+      <span class="pill pill-flag">Flagship</span>
+    </div>
+    <h3>FP&amp;A &amp; the Month-End Close</h3>
+    <p class="deck">An FP&amp;A team's month-end, the days-to-close math, and how the review gate keeps sign-off human.</p>
+    <span class="readmore">Read the flagship →</span>
+  </a>
+<a class="card accent-navy" href="issues/issue-6.html">
+    <div class="card-top">
+      <span class="issue-num">Issue 06</span>
+      <span class="pill pill-flag">Flagship</span>
+    </div>
+    <h3>Treasury, Fraud &amp; Compliance</h3>
+    <p class="deck">A 2 a.m. fraud catch, the work agents do across three domains, and the 88/22 gap that dictates how we deploy.</p>
+    <span class="readmore">Read the flagship →</span>
+  </a></div>
+    </div>
+  </section>
+<section class="explain">
+  <div class="wrap">
+    <h2>How this letter is organised</h2>
+    <div class="explain-grid">
+      <div><h4>Flagships, front and centre</h4><p>Each issue's publish-ready <strong>Version F</strong> is what you see here — a short human story, the numbers that matter, concrete steps, and a next step. One click, one read.</p></div>
+      <div><h4>Two reading tracks</h4><p><strong>Foundations</strong> explains agents; <strong>Proof at Home</strong> shows them working in our own revenue cycle, close, and back office. Read a track top to bottom.</p></div>
+      <div><h4>Alternates in the archive</h4><p>Prefer a pure story or a data-first brief to forward to your boss? Every issue's <strong>Story-led (A)</strong> and <strong>Data/ROI (B)</strong> versions live in the <a href="archive/index.html">archive</a>.</p></div>
+    </div>
+  </div>
+</section>
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Finance Forward</strong> — an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</p>
+    <p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+    <p class="muted small">Issues 1–6 published · Issues 7–15 in progress. Educational internal content; statistics cited per each issue.</p>
+  </div>
+</footer>
 </body>
 </html>

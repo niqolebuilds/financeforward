@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Issue 3 · Data / ROI-led — Finance Forward</title>
+<meta name="description" content="An analyst stopped fearing the "black box" once she saw its parts — and one of those parts is where the savings come from.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="reading">
+
+<nav class="topnav"><div class="wrap"><a href="../archive/index.html">← Archive</a><span class="crumb">Issue 03 · Data / ROI-led</span></div></nav>
+<article class="article alt accent-teal">
+  <div class="wrap narrow">
+    <span class="eyebrow">Understanding agents · Data / ROI-led (Version B)</span>
+    <h1>Issue 3 — Anatomy of an Agent: reasoning, memory, tools, autonomy</h1>
+    <div class="subjectbar">
+      <p class="subject"><span>Subject</span> Four components. One of them is where the ROI lives.</p>
+      <p class="preview">An analyst stopped fearing the "black box" once she saw its parts — and one of those parts is where the savings come from.</p>
+    </div>
+    <p><strong>An AP analyst on our team avoided agents until she saw they were just four labelled parts, not a black box. </strong>Here's the anatomy — and where each part turns into value.</p>
+<figure class="fig">
+  <img src="../assets/img/i3_anatomy.svg" alt="Figure 3.1 — Four parts working together: a goal goes in, a checked result comes out." loading="lazy">
+  <figcaption>Figure 3.1 — Four parts working together: a goal goes in, a checked result comes out.<span class="src">Data source: Original schematic (Finance Forward); agent-component framing per common industry usage, 2026.</span></figcaption>
+</figure>
+<p>An agent has four components: reasoning (it plans the steps), memory (it holds context across a task), tools (it acts inside real systems), and autonomy (it takes the next step within set limits). Strip any one out and you're back to a chatbot — which is precisely why a chatbot answers while an agent acts. The value doesn't come from the reasoning alone; it comes from tools plus bounded autonomy, the parts that let it complete work rather than describe it.</p>
+<p>Quantify that. Because an agent has tools and autonomy, one instance can run 3,000+ claim-status checks per day — equivalent to 5–8 FTEs, roughly $350K a year (solventum.com; healthcarefinancenews.com). A pure-reasoning chatbot can explain a denial code beautifully and save a few minutes; it can't touch the portal, so its ceiling is minutes, not FTEs. The anatomy is the ROI story: memory keeps quality high across thousands of repetitions, tools connect to systems, autonomy removes the human bottleneck from the repetitive middle — while a human keeps the ends.</p>
+<figure class="fig">
+  <img src="../assets/img/i3_hitl_gate.svg" alt="Figure 3.2 — Where the human sits: the agent does the grind, a person owns the decision." loading="lazy">
+  <figcaption>Figure 3.2 — Where the human sits: the agent does the grind, a person owns the decision.<span class="src">Data source: Original schematic; workload figure per solventum.com / healthcarefinancenews.com (3,000+ checks/day).</span></figcaption>
+</figure>
+<p>Which is the point analytical readers should hold onto: autonomy is a bounded component, not an open door. Figure 3.2 shows the design — the agent reads, checks, and drafts at machine scale, then hits a human-in-the-loop gate before submission. A named person approves, and the whole sequence runs under a scoped agent identity with a complete action log. That matters beyond comfort: about 88% of organizations have had an AI-related security incident, yet only ~22% treat their agents as identity-bearing with proper access controls (accelirate.com). Doing the agent-identity work isn't optional polish — it's the control that separates a safe deployment from a headline.</p>
+<p>So the build recommendation follows straight from the anatomy. Deploy the parts that create value (tools + memory at volume), bound the part that creates risk (autonomy) with a human gate, and instrument the whole thing with an agent identity so it audits cleanly. Measure the payback where it actually appears — human-review time per item, cost per task, throughput — not in prompt counts. Know the four parts and you can both size the return and govern it. That's the finance way to adopt this.</p>
+    <div class="sources"><h4>Sources</h4><ul><li>solventum.com; healthcarefinancenews.com — one agent ≈ 3,000+ checks/day ≈ 5–8 FTEs (~$350K/yr).</li><li>accelirate.com — ~88% of orgs had an AI-related security incident; ~22% treat agents as identity-bearing.</li><li>Common industry framing — reasoning, memory, tools, autonomy (2026).</li></ul></div>
+    <div class="alt-links">
+      <h4>Other versions of this issue</h4>
+      <p>
+        <a href="issue-3-a.html">Story-led (A) →</a> &nbsp;·&nbsp; 
+        
+        <a href="../issues/issue-3.html">Flagship (F) →</a>
+      </p>
+    </div>
+  </div>
+</article>
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Finance Forward</strong> — an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</p>
+    <p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+    <p class="muted small">Issues 1–6 published · Issues 7–15 in progress. Educational internal content; statistics cited per each issue.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Issue 3 · Story-led — Finance Forward</title>
+<meta name="description" content="Once Dewi saw the four parts of an agent, it stopped feeling like magic and started feeling like a colleague.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="reading">
+
+<nav class="topnav"><div class="wrap"><a href="../archive/index.html">← Archive</a><span class="crumb">Issue 03 · Story-led</span></div></nav>
+<article class="article alt accent-teal">
+  <div class="wrap narrow">
+    <span class="eyebrow">Understanding agents · Story-led (Version A)</span>
+    <h1>Issue 3 — Anatomy of an Agent: reasoning, memory, tools, autonomy</h1>
+    <div class="subjectbar">
+      <p class="subject"><span>Subject</span> What's actually under the hood</p>
+      <p class="preview">Once Dewi saw the four parts of an agent, it stopped feeling like magic and started feeling like a colleague.</p>
+    </div>
+    <p>Dewi, one of our AP analysts, told me she'd avoided the word "agent" because it sounded like a black box she'd be blamed for. So we opened the box together, and it turned out to have just four parts. By the end she said the thing I hoped she would: "Oh — it's not magic. It's a very organised assistant."</p>
+<figure class="fig">
+  <img src="../assets/img/i3_anatomy.svg" alt="Figure 3.1 — Four parts working together: a goal goes in, a checked result comes out." loading="lazy">
+  <figcaption>Figure 3.1 — Four parts working together: a goal goes in, a checked result comes out.<span class="src">Data source: Original schematic (Finance Forward); agent-component framing per common industry usage, 2026.</span></figcaption>
+</figure>
+<p>Part one is reasoning: the agent breaks a goal into steps. Give it "reconcile this vendor statement" and it plans — pull our ledger, line up the statement, match invoices, flag what doesn't tie. Part two is memory: it holds context, so it remembers this vendor's quirks, the last exceptions you resolved, the format their statements come in. Part three is tools: it can actually reach into systems — the ledger, the payer portal, email — and do things there, not just talk about them. Part four is autonomy: it can take the next step on its own, within limits you set.</p>
+<p><strong>Put those together and our line finally makes mechanical sense: </strong>a chatbot answers because it only has the reasoning-and-words part; an agent acts because it also has memory, tools, and bounded autonomy. That's the difference between a colleague who can tell you what to do and one who can help do it.</p>
+<figure class="fig">
+  <img src="../assets/img/i3_hitl_gate.svg" alt="Figure 3.2 — Where the human sits: the agent does the grind, a person owns the decision." loading="lazy">
+  <figcaption>Figure 3.2 — Where the human sits: the agent does the grind, a person owns the decision.<span class="src">Data source: Original schematic; workload figure per solventum.com / healthcarefinancenews.com (3,000+ checks/day).</span></figcaption>
+</figure>
+<p>Here's the part that settled Dewi's worry. Autonomy is bounded on purpose, and there's a gate where it matters (Figure 3.2). In a claim workflow the agent can read, check status, and draft the appeal — thousands a day if needed — but it stops at a human gate before anything is submitted. A named person approves. And it all happens under an "agent identity": the agent has its own scoped credentials and every action is logged, so if anyone ever asks "who did this and why," there's a clean answer. That's not a black box. That's more traceable than a busy afternoon of manual clicks.</p>
+<p>Once you can name the parts, the fear of the unknown shrinks to something manageable. Reasoning plans it, memory remembers it, tools do it, autonomy carries it — and you hold the gate. Dewi's takeaway was exactly right: not magic, just an organised assistant that happens to be tireless. And the judgment about what's actually correct? That stayed hers.</p>
+<div class="nudge"><span class="nudge-k">Your next step:</span> Pick one task and name its four parts: what's the goal (reasoning), what would the agent need to remember (memory), which systems would it touch (tools), and where would you put the human gate (autonomy)? Reply with one — I'll feature a few reader-mapped workflows next time.</div>
+    <div class="sources"><h4>Sources</h4><ul><li>Common industry framing of agent components — reasoning, memory, tools, autonomy (2026).</li><li>solventum.com; healthcarefinancenews.com — throughput example (3,000+ claim-status checks/day).</li><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li></ul></div>
+    <div class="alt-links">
+      <h4>Other versions of this issue</h4>
+      <p>
+        
+        <a href="issue-3-b.html">Data / ROI-led (B) →</a> &nbsp;·&nbsp; 
+        <a href="../issues/issue-3.html">Flagship (F) →</a>
+      </p>
+    </div>
+  </div>
+</article>
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Finance Forward</strong> — an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</p>
+    <p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+    <p class="muted small">Issues 1–6 published · Issues 7–15 in progress. Educational internal content; statistics cited per each issue.</p>
+  </div>
+</footer>
+</body>
+</html>

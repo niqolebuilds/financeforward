@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Issue 6 · Data / ROI-led — Finance Forward</title>
+<meta name="description" content="A held payment at 2 a.m. shows the upside; one statistic shows the homework that makes it safe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="reading">
+
+<nav class="topnav"><div class="wrap"><a href="../archive/index.html">← Archive</a><span class="crumb">Issue 06 · Data / ROI-led</span></div></nav>
+<article class="article alt accent-navy">
+  <div class="wrap narrow">
+    <span class="eyebrow">Agents on our own turf · Data / ROI-led (Version B)</span>
+    <h1>Issue 6 — Agents in treasury, fraud, and compliance</h1>
+    <div class="subjectbar">
+      <p class="subject"><span>Subject</span> 88% had an AI security incident. Only 22% control for it. Mind the gap.</p>
+      <p class="preview">A held payment at 2 a.m. shows the upside; one statistic shows the homework that makes it safe.</p>
+    </div>
+    <p><strong>A treasury analyst got an overnight fraud flag with the reasoning already attached — </strong>the upside is obvious; the number that should shape how we deploy is less comforting.</p>
+<figure class="fig">
+  <img src="../assets/img/i6_domains.svg" alt="Figure 6.1 — Three back-office fronts where agents earn their keep — each ending at a human who approves the call." loading="lazy">
+  <figcaption>Figure 6.1 — Three back-office fronts where agents earn their keep — each ending at a human who approves the call.<span class="src">Data source: Original schematic (Finance Forward).</span></figcaption>
+</figure>
+<p>Here's the stat every leader scaling agents in treasury, fraud, or compliance needs on the wall: about 88% of organizations have already experienced an AI-related security incident, yet only ~22% treat their agents as identity-bearing with proper access controls (accelirate.com; Figure 6.2). The capability is spreading faster than the controls around it — and in functions that move money and answer to regulators, that gap is the whole risk.</p>
+<p>The upside is real and worth naming first. Across three domains (Figure 6.1), agents do genuine work: in treasury, continuous balance sweeps, cash forecasting, and idle-fund flags; in fraud, always-on transaction monitoring, anomaly scoring, and freeze-and-alert; in compliance, vendor screening, policy checks, and audit-evidence assembly. Because a chatbot answers while an agent acts, these show up as faster detection, fewer missed anomalies, and audit packs that assemble themselves — measurable in detection latency and analyst hours, not survey scores.</p>
+<figure class="fig">
+  <img src="../assets/img/i6_security_gap.svg" alt="Figure 6.2 — The gap agent identity closes: most orgs have had an AI security incident; few give agents proper identity controls." loading="lazy">
+  <figcaption>Figure 6.2 — The gap agent identity closes: most orgs have had an AI security incident; few give agents proper identity controls.<span class="src">Data source: accelirate.com — ~88% had an AI-related security incident; ~22% treat agents as identity-bearing.</span></figcaption>
+</figure>
+<p>But the 88/22 gap dictates the deployment order: identity first, autonomy second. Every agent should carry its own scoped credentials (least-privilege access), a complete and immutable action log, and — critically in these domains — no unilateral authority over money movement or regulatory decisions. The agent watches, scores, and assembles; a human approves the release, the block, or the filing. That human-in-the-loop gate isn't friction; in a regulated function it's the control that makes the whole thing deployable.</p>
+<p>For the analytically minded, the ROI has two sides that must be weighed together. Upside: reduced detection latency, broader coverage (an agent watches 100% of transactions, not a sample), and lower manual audit-prep cost. Downside if you skip the identity work: you join the 88% — and in treasury or compliance, a single incident can dwarf the efficiency gains. The expected-value case is strongly positive only when the identity controls are in place before you widen autonomy.</p>
+<p>Recommended sequence: (1) stand up agent identity — scoped credentials plus logging — before any live deployment; (2) start in "watch and alert" mode, where the agent flags but never acts on money movement; (3) measure detection latency, coverage, and false-positive rate against baseline; (4) widen autonomy only where the log proves reliability, always keeping the human approval gate on consequential actions. Do the homework first, and this is one of the safest, highest-leverage places agents earn their keep. Forward this to whoever owns treasury or compliance risk.</p>
+    <div class="sources"><h4>Sources</h4><ul><li>accelirate.com — ~88% of orgs had an AI-related security incident; ~22% treat agents as identity-bearing with access controls.</li><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li></ul></div>
+    <div class="alt-links">
+      <h4>Other versions of this issue</h4>
+      <p>
+        <a href="issue-6-a.html">Story-led (A) →</a> &nbsp;·&nbsp; 
+        
+        <a href="../issues/issue-6.html">Flagship (F) →</a>
+      </p>
+    </div>
+  </div>
+</article>
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Finance Forward</strong> — an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</p>
+    <p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+    <p class="muted small">Issues 1–6 published · Issues 7–15 in progress. Educational internal content; statistics cited per each issue.</p>
+  </div>
+</footer>
+</body>
+</html>
