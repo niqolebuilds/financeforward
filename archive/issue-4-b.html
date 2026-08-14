@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Issue 4 · Data / ROI-led — Finance Forward</title>
+<meta name="description" content="One analyst went from sorting denials to appealing them — and the unit economics moved with her.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="reading">
+
+<nav class="topnav"><div class="wrap"><a href="../archive/index.html">← Archive</a><span class="crumb">Issue 04 · Data / ROI-led</span></div></nav>
+<article class="article alt accent-navy">
+  <div class="wrap narrow">
+    <span class="eyebrow">Agents on our own turf · Data / ROI-led (Version B)</span>
+    <h1>Issue 4 — Proof at home: agents in the revenue cycle</h1>
+    <div class="subjectbar">
+      <p class="subject"><span>Subject</span> 30–60% lower cost-to-collect. Here's the workflow behind the number.</p>
+      <p class="preview">One analyst went from sorting denials to appealing them — and the unit economics moved with her.</p>
+    </div>
+    <p><strong>A denials analyst who used to spend her mornings triaging now spends them appealing — </strong>that shift, repeated across a floor, is what the numbers below are describing.</p>
+<figure class="fig">
+  <img src="../assets/img/i4_rcm_flow.svg" alt="Figure 4.1 — The denial-to-resubmission loop: the agent does the legwork; a human approves before anything goes back out." loading="lazy">
+  <figcaption>Figure 4.1 — The denial-to-resubmission loop: the agent does the legwork; a human approves before anything goes back out.<span class="src">Data source: Original schematic (Finance Forward); throughput per solventum.com / healthcarefinancenews.com.</span></figcaption>
+</figure>
+<p>The headline for anyone who owns the A/R number: McKinsey estimates agentic automation can reduce cost-to-collect by 30–60% in healthcare revenue cycle. That's not an efficiency nudge; it re-bases what it costs us to collect what we're already owed. And the mechanism is specific enough to plan around.</p>
+<p>Take claim-status checking — high-volume, rule-bound, and today a genuine drain. A single agent can run 3,000+ status checks per day, work equivalent to 5–8 full-time staff, or roughly $350K a year (solventum.com; healthcarefinancenews.com; Figure 4.2). Layer on automated reason-code reading and first-draft appeals, and the agent covers the repetitive 80% of the denial loop, leaving the exception 20% — the appeals that need human judgment — to the team. A chatbot can't move these numbers, because a chatbot answers; an agent acts, and only acting shows up in days-in-A/R and cost per claim.</p>
+<figure class="fig">
+  <img src="../assets/img/i4_capacity.svg" alt="Figure 4.2 — Same volume of status checks, a fraction of the human hours — capacity that moves to exception work." loading="lazy">
+  <figcaption>Figure 4.2 — Same volume of status checks, a fraction of the human hours — capacity that moves to exception work.<span class="src">Data source: solventum.com; healthcarefinancenews.com — one agent ≈ 3,000+ checks/day ≈ 5–8 FTEs (~$350K/yr).</span></figcaption>
+</figure>
+<p>The sector is already validating this. HFMA reports roughly 27% of healthcare organizations are deploying revenue-cycle AI at scale and about 53% are piloting (hfma.org). So the relevant question for us isn't whether the workflow works — peers are proving it — but which of our queues to point it at first, and how fast we can measure the return.</p>
+<p>On controls, the design is exactly what a finance function wants (Figure 4.1). The agent prepares and proposes; a named person approves every resubmission; nothing goes to a payer unreviewed. All actions run under a scoped agent identity with a complete log, so the workflow audits like any system access. You capture the throughput without loosening oversight — the combination that lets us actually sign off.</p>
+<p>Recommended first move: pick one payer or one denial category, deploy the agent at "act with review," and track three numbers against a baseline for 60 days — clean-claim rate, days in A/R, and human-review minutes per claim. Let the deltas, not the vendor deck, decide whether to widen. If the 30–60% band is even half-right for us, that's the highest-ROI pilot on the finance floor. Forward this to whoever owns cost-to-collect.</p>
+    <div class="sources"><h4>Sources</h4><ul><li>McKinsey — 30–60% cost-to-collect reduction (healthcare RCM).</li><li>solventum.com; healthcarefinancenews.com — one agent ≈ 3,000+ checks/day ≈ 5–8 FTEs (~$350K/yr).</li><li>hfma.org — ~27% deploying RCM AI at scale, ~53% piloting.</li><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li></ul></div>
+    <div class="alt-links">
+      <h4>Other versions of this issue</h4>
+      <p>
+        <a href="issue-4-a.html">Story-led (A) →</a> &nbsp;·&nbsp; 
+        
+        <a href="../issues/issue-4.html">Flagship (F) →</a>
+      </p>
+    </div>
+  </div>
+</article>
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Finance Forward</strong> — an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</p>
+    <p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+    <p class="muted small">Issues 1–6 published · Issues 7–15 in progress. Educational internal content; statistics cited per each issue.</p>
+  </div>
+</footer>
+</body>
+</html>

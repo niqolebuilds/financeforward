@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Issue 3: Anatomy of an Agent — Finance Forward</title>
+<meta name="description" content="Reasoning, memory, tools, autonomy — what each does, what it's worth, and how the human gate keeps it safe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="reading">
+
+<nav class="topnav"><div class="wrap"><a href="../index.html">← Finance Forward</a><span class="crumb">Foundations · Issue 03</span></div></nav>
+<article class="article accent-teal">
+  <div class="wrap narrow">
+    <span class="eyebrow">Understanding agents · Flagship (recommended)</span>
+    <h1>Issue 3 — Anatomy of an Agent: reasoning, memory, tools, autonomy</h1>
+    <div class="subjectbar">
+      <p class="subject"><span>Subject</span> Open the box: the four parts of an agent, and where you sit</p>
+      <p class="preview">Reasoning, memory, tools, autonomy — what each does, what it's worth, and how the human gate keeps it safe.</p>
+    </div>
+    <p>Dewi, one of our AP analysts, admitted she'd been avoiding the word "agent" — it sounded like a black box she'd be accountable for without understanding. So we opened it, and found four plain parts. Reasoning: it breaks a goal into steps. Memory: it holds context across the task — this vendor's quirks, last month's exceptions. Tools: it reaches into real systems and acts. Autonomy: it takes the next step on its own, within limits you set. "It's not magic," she said. "It's an organised assistant." Exactly.</p>
+<figure class="fig">
+  <img src="../assets/img/i3_anatomy.svg" alt="Figure 3.1 — Four parts working together: a goal goes in, a checked result comes out." loading="lazy">
+  <figcaption>Figure 3.1 — Four parts working together: a goal goes in, a checked result comes out.<span class="src">Data source: Original schematic (Finance Forward); agent-component framing per common industry usage, 2026.</span></figcaption>
+</figure>
+<p><strong>Those four parts are why our throughline is literally true: </strong>a chatbot answers; an agent acts. A chatbot has reasoning and words and stops there. An agent adds memory, tools, and bounded autonomy — the parts that let it finish work instead of just describing it.</p>
+<p>That anatomy is also the business case. Because it has tools and autonomy, one agent can run 3,000+ claim-status checks a day — the equivalent of 5–8 FTEs, about $350K a year (solventum.com; healthcarefinancenews.com) — while memory keeps quality steady across every repetition. A pure chatbot can explain a denial code and save minutes; it can't open the portal, so minutes are its ceiling. The value lives in the acting parts; the reasoning part just aims them.</p>
+<figure class="fig">
+  <img src="../assets/img/i3_hitl_gate.svg" alt="Figure 3.2 — Where the human sits: the agent does the grind, a person owns the decision." loading="lazy">
+  <figcaption>Figure 3.2 — Where the human sits: the agent does the grind, a person owns the decision.<span class="src">Data source: Original schematic; workload figure per solventum.com / healthcarefinancenews.com (3,000+ checks/day).</span></figcaption>
+</figure>
+<p>Now the part that keeps it safe, because acting at that scale demands it. Autonomy is bounded on purpose (Figure 3.2): the agent reads, checks, and drafts at machine speed, then stops at a human-in-the-loop gate. A named person approves before anything is submitted, and every step runs under a scoped "agent identity" — its own credentials, its own log. This isn't ceremony: ~88% of organizations have had an AI-related security incident, yet only ~22% give agents proper identity and access controls (accelirate.com). The agent-identity discipline is the difference between traceable and reckless — and it's squarely in our wheelhouse.</p>
+<p>So here's how to put it to work. Take one workflow and name its four parts: the goal (reasoning), what it must remember (memory), which systems it touches (tools), and where you place the gate (autonomy). Deploy the value-creating parts at volume, bound the risky one with the human gate, instrument it with an agent identity, and measure payback where it shows — review time per item, cost per task, throughput. Know the anatomy and you can size the return and govern it in the same breath. The grind goes to the machine; the judgment — what's actually correct — stays with you.</p>
+<div class="nudge"><span class="nudge-k">Your next step:</span> Map one of your workflows to the four parts and reply with it. Bring your three sharpest candidates; in Issue 4 we go concrete on agents in the revenue cycle and start turning these maps into a real shortlist.</div>
+    <div class="sources"><h4>Sources</h4><ul><li>Common industry framing — reasoning, memory, tools, autonomy (2026).</li><li>solventum.com; healthcarefinancenews.com — one agent ≈ 3,000+ checks/day ≈ 5–8 FTEs (~$350K/yr).</li><li>accelirate.com — ~88% had an AI-related security incident; ~22% treat agents as identity-bearing.</li><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li></ul></div>
+    <div class="alt-links">
+      <h4>Other versions of this issue</h4>
+      <p>Same idea, different angle. <a href="../archive/issue-3-a.html">Story-led (A) →</a> &nbsp;·&nbsp; <a href="../archive/issue-3-b.html">Data / ROI-led (B) →</a></p>
+    </div>
+    <div class="pager">
+      <a href="issue-2.html">← Issue 02</a>
+      <a href="issue-4.html">Issue 04 →</a>
+    </div>
+  </div>
+</article>
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Finance Forward</strong> — an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</p>
+    <p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+    <p class="muted small">Issues 1–6 published · Issues 7–15 in progress. Educational internal content; statistics cited per each issue.</p>
+  </div>
+</footer>
+</body>
+</html>

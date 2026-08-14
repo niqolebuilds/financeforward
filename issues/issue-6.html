@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Issue 6: Treasury, Fraud &amp; Compliance — Finance Forward</title>
+<meta name="description" content="A 2 a.m. fraud catch, the work agents do across three domains, and the 88/22 gap that dictates how we deploy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="reading">
+
+<nav class="topnav"><div class="wrap"><a href="../index.html">← Finance Forward</a><span class="crumb">Proof at Home · Issue 06</span></div></nav>
+<article class="article accent-navy">
+  <div class="wrap narrow">
+    <span class="eyebrow">Agents on our own turf · Flagship (recommended)</span>
+    <h1>Issue 6 — Agents in treasury, fraud, and compliance</h1>
+    <div class="subjectbar">
+      <p class="subject"><span>Subject</span> Treasury, fraud, compliance: big upside, one piece of homework</p>
+      <p class="preview">A 2 a.m. fraud catch, the work agents do across three domains, and the 88/22 gap that dictates how we deploy.</p>
+    </div>
+    <p>Rina, in our treasury and controls function, describes the night an odd payment ran — strange amount, unusual beneficiary, a time no one's at a desk. Old world: it waits in a log for days. Instead, an agent scored it anomalous, held it, and alerted. By morning the flag was waiting with its reasoning attached. Crucially, the agent held and alerted — it did not reverse anything. The decision stayed with Rina.</p>
+<figure class="fig">
+  <img src="../assets/img/i6_domains.svg" alt="Figure 6.1 — Three back-office fronts where agents earn their keep — each ending at a human who approves the call." loading="lazy">
+  <figcaption>Figure 6.1 — Three back-office fronts where agents earn their keep — each ending at a human who approves the call.<span class="src">Data source: Original schematic (Finance Forward).</span></figcaption>
+</figure>
+<p><strong>That small story spans three jobs, and the throughline holds across all of them: </strong>a chatbot answers; an agent acts. In treasury: sweep balances, forecast cash, flag idle funds. In fraud: watch transactions, score anomalies, freeze-and-alert. In compliance: screen vendors, check policy, assemble audit evidence (Figure 6.1).</p>
+<p>The upside is measurable — faster detection, full coverage instead of sampled, audit packs that assemble themselves — but one number dictates how we deploy: about 88% of organizations have had an AI-related security incident, while only ~22% treat their agents as identity-bearing with proper access controls (accelirate.com; Figure 6.2). In functions that move money and face regulators, that gap is the risk. So the rule here is identity first, autonomy second.</p>
+<figure class="fig">
+  <img src="../assets/img/i6_security_gap.svg" alt="Figure 6.2 — The gap agent identity closes: most orgs have had an AI security incident; few give agents proper identity controls." loading="lazy">
+  <figcaption>Figure 6.2 — The gap agent identity closes: most orgs have had an AI security incident; few give agents proper identity controls.<span class="src">Data source: accelirate.com — ~88% had an AI-related security incident; ~22% treat agents as identity-bearing.</span></figcaption>
+</figure>
+<p>Concretely, every agent in these domains carries scoped, least-privilege credentials, a complete and immutable action log, and no unilateral authority over money movement or regulatory calls. It watches, scores, and assembles; a human approves the release, the block, or the filing. That human-in-the-loop gate is what makes a regulated deployment signable — and Rina's ability to see exactly what the agent looked at, and that it touched nothing it shouldn't, is the point, not a nicety.</p>
+<p>Execution sequence we'd recommend: (1) stand up agent identity — scoped credentials plus logging — before anything goes live; (2) start in watch-and-alert mode, flagging but never acting on money movement; (3) measure detection latency, coverage, and false-positive rate against a baseline; (4) widen autonomy only where the log proves reliability, always keeping the human approval gate on consequential actions. Do the homework first and this becomes one of the safest, highest-leverage places to let an agent work.</p>
+<p>And the human note to close on: agents don't replace the judgment that makes people good at these jobs — the nose for what smells wrong, the read on an evasive vendor, the call on whether to hold a payment. Those stay yours. What changes is that you no longer have to be awake at 2 a.m. to catch it. The watching scales; the deciding stays human — and fear of the unknown shrinks once you can see exactly what the agent did and where you still hold the gate.</p>
+<div class="nudge"><span class="nudge-k">Your next step:</span> Pick one "always-on watcher" job in your area — a payment pattern, a limit, a policy breach — and reply with it. Watch-and-alert is the safest first step, and we'll help you frame the identity-first setup before anything goes live.</div>
+    <div class="sources"><h4>Sources</h4><ul><li>accelirate.com — ~88% had an AI-related security incident; ~22% treat agents as identity-bearing with access controls.</li><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li></ul></div>
+    <div class="alt-links">
+      <h4>Other versions of this issue</h4>
+      <p>Same idea, different angle. <a href="../archive/issue-6-a.html">Story-led (A) →</a> &nbsp;·&nbsp; <a href="../archive/issue-6-b.html">Data / ROI-led (B) →</a></p>
+    </div>
+    <div class="pager">
+      <a href="issue-5.html">← Issue 05</a>
+      <span></span>
+    </div>
+  </div>
+</article>
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Finance Forward</strong> — an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</p>
+    <p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+    <p class="muted small">Issues 1–6 published · Issues 7–15 in progress. Educational internal content; statistics cited per each issue.</p>
+  </div>
+</footer>
+</body>
+</html>
