@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+<title>Edisi 6: Treasury, Fraud &amp; Compliance — Finance Forward</title>
+<meta content="Sebuah tangkapan fraud jam 2 pagi, kerja agent di tiga domain, dan celah 88/22 yang menentukan cara kita deploy." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../../assets/style.css" rel="stylesheet"/>
+</head>
+<body class="reading">
+<nav class="topnav"><div class="wrap"><a href="../index.html">← Finance Forward</a>
+<div class="nav-right">
+<span class="crumb"><span>Bukti di Lapangan Sendiri · Edisi 06</span></span>
+<div class="lang-toggle"><span class="active">ID</span><a href="../../issues/issue-6.html">EN</a></div>
+</div>
+</div></nav>
+<article class="article accent-navy">
+<div class="wrap narrow">
+<span class="eyebrow"><span>Agent di lapangan kita sendiri · Andalan (rekomendasi)</span></span>
+
+<h1>Edisi 6 — Agent di treasury, fraud, dan compliance</h1>
+<div class="subjectbar">
+
+<p class="subject"><span>Subjek</span> Treasury, fraud, compliance: upside-nya besar, tapi ada satu PR yang harus dikerjakan</p>
+
+<p class="preview">Sebuah tangkapan fraud jam 2 pagi, kerja agent di tiga domain, dan celah 88/22 yang menentukan cara kita deploy.</p>
+</div>
+
+<p>Rina, di fungsi treasury dan controls kita, cerita soal malam waktu ada pembayaran yang aneh — jumlahnya nggak lazim, penerimanya nggak biasa, di jam yang nggak ada siapa pun di meja kerja. Di dunia lama: itu bakal nongkrong di log selama beberapa hari. Tapi sekarang, agent yang menandainya sebagai anomali, menahannya, dan mengirim alert. Waktu pagi tiba, flag-nya sudah menunggu lengkap dengan alasannya. Yang penting, agent cuma menahan dan mengirim alert — dia nggak membatalkan apa pun. Keputusannya tetap di tangan Rina.</p>
+<figure class="fig">
+<img alt="Figure 6.1 — Three back-office fronts where agents earn their keep — each ending at a human who approves the call." loading="lazy" src="../../assets/img/i6_domains.svg"/>
+<figcaption>
+
+<span>Gambar 6.1 — Tiga lini back-office tempat agent membuktikan diri — semuanya berakhir di manusia yang menyetujui keputusan.</span>
+
+<span class="src">Sumber data: Skema orisinal (Finance Forward).</span>
+</figcaption>
+</figure>
+
+<p><strong>Cerita kecil itu merentang di tiga pekerjaan, dan pola dasarnya sama di semuanya: </strong>chatbot menjawab; agent bertindak. Di treasury: sweep saldo, forecast cash, tandai dana yang menganggur. Di fraud: memantau transaksi, menilai anomali, freeze-and-alert. Di compliance: screening vendor, cek kepatuhan kebijakan, susun bukti audit (Gambar 6.1).</p>
+
+<p>Upside-nya bisa diukur — deteksi lebih cepat, coverage penuh alih-alih sampel, audit pack yang menyusun dirinya sendiri — tapi ada satu angka yang menentukan cara kita deploy: sekitar 88% organisasi pernah kena insiden keamanan terkait AI, sementara cuma ~22% yang memperlakukan agent-nya sebagai identity-bearing dengan kontrol akses yang layak (accelirate.com; Gambar 6.2). Di fungsi yang memindahkan uang dan berhadapan dengan regulator, celah itu adalah risikonya. Jadi aturannya di sini: identitas dulu, otonomi belakangan.</p>
+<figure class="fig">
+<img alt="Figure 6.2 — The gap agent identity closes: most orgs have had an AI security incident; few give agents proper identity controls." loading="lazy" src="../../assets/img/i6_security_gap.svg"/>
+<figcaption>
+
+<span>Gambar 6.2 — Celah yang ditutup identitas agent: kebanyakan organisasi pernah kena insiden keamanan AI; sedikit yang memberi agent kontrol identitas yang layak.</span>
+
+<span class="src">Sumber data: accelirate.com — ~88% pernah kena insiden keamanan terkait AI; ~22% memperlakukan agent sebagai identity-bearing.</span>
+</figcaption>
+</figure>
+
+<p>Konkretnya, tiap agent di domain-domain ini punya kredensial scoped dengan least-privilege, action log yang lengkap dan nggak bisa diubah, dan nggak punya otoritas sepihak atas pergerakan uang atau keputusan regulasi. Dia yang memantau, menilai, dan menyusun; manusia yang menyetujui pelepasan, blokir, atau filing-nya. Human-in-the-loop gate itulah yang bikin deployment di area yang diregulasi jadi bisa ditandatangani — dan kemampuan Rina buat lihat persis apa yang dilihat agent, dan bahwa dia nggak menyentuh apa pun yang seharusnya nggak disentuh, itu intinya, bukan sekadar nilai tambah.</p>
+
+<p>Urutan eksekusi yang kita rekomendasikan: (1) bangun identitas agent — kredensial scoped plus logging — sebelum apa pun go-live; (2) mulai di mode watch-and-alert, menandai tapi nggak pernah bertindak atas pergerakan uang; (3) ukur detection latency, coverage, dan false-positive rate terhadap baseline; (4) perluas otonomi cuma di area yang log-nya sudah membuktikan keandalan, dan tetap jaga human approval gate untuk tindakan yang konsekuensinya besar. Kerjakan PR-nya dulu, dan ini jadi salah satu tempat paling aman dan paling berdampak buat agent bekerja.</p>
+
+<p>Dan catatan manusia buat menutup: agent nggak menggantikan judgment yang bikin orang jago di pekerjaan ini — insting soal apa yang terasa nggak beres, pembacaan atas vendor yang mengelak, keputusan buat menahan pembayaran atau nggak. Itu semua tetap punyamu. Yang berubah, kamu nggak perlu lagi terjaga jam 2 pagi buat menangkapnya. Pemantauannya yang bisa di-scale; keputusannya tetap di tangan manusia — dan rasa takut akan hal yang nggak dikenal jadi mengecil begitu kamu bisa lihat persis apa yang dilakukan agent dan di mana kamu masih pegang gerbangnya.</p>
+
+<div class="nudge"><span class="nudge-k">Langkah berikutnya:</span> Pilih satu pekerjaan "always-on watcher" di area kamu — pola pembayaran, sebuah limit, atau pelanggaran kebijakan — dan balas dengan itu. Watch-and-alert adalah langkah pertama yang paling aman, dan kita bantu susun setup identity-first-nya sebelum apa pun go-live.</div>
+<div class="sources">
+<h4>Sumber</h4>
+
+<ul><li>accelirate.com — ~88% pernah kena insiden keamanan terkait AI; ~22% memperlakukan agent sebagai identity-bearing dengan kontrol akses yang layak.</li><li>kore.ai; Generative, Inc. (2026) — "chatbot menjawab; agent bertindak."</li></ul>
+</div>
+<div class="alt-links">
+
+<h4>Versi lain edisi ini</h4>
+
+<p>Ide yang sama, sudut pandang beda. <a href="../archive/issue-6-a.html">Gaya Cerita (A) →</a>  ·  <a href="../archive/issue-6-b.html">Data / ROI (B) →</a></p>
+</div>
+<div class="pager">
+<a href="issue-5.html"><span>← Edisi 05</span></a>
+<a href="issue-7.html"><span>Edisi 07 →</span></a>
+</div>
+</div>
+</article>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Finance Forward</strong> <span>— surat internal untuk tim Finance &amp; Revenue-Cycle Siloam Hospitals.</span></p>
+
+<p class="muted">Chatbot itu menjawab; agent itu bertindak — dan keputusan akhir tetap di tangan manusia.</p>
+
+<p class="muted small">Edisi 1–12 sudah terbit · Edisi 13–15 masih digarap. Konten edukasi internal; statistik dikutip di tiap edisi.</p>
+</div>
+</footer>
+
+</body>
+</html>

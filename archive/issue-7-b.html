@@ -1,93 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script>try{if(localStorage.getItem('ff_lang')==='id')document.documentElement.classList.add('show-id')}catch(e){}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
 <title>Issue 7 · Data / ROI-led — Finance Forward</title>
-<meta name="description" content="A reviewer's plain question — who's accountable — has a concrete, governable answer. Here are the numbers behind it.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css">
+<meta content="A reviewer's plain question — who's accountable — has a concrete, governable answer. Here are the numbers behind it." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/style.css" rel="stylesheet"/>
 </head>
 <body class="reading">
-
 <nav class="topnav"><div class="wrap"><a href="../archive/index.html">← Archive</a>
-  <div class="nav-right">
-    <span class="crumb"><span class="lang-en">Issue 07 · Data / ROI-led</span><span class="lang-id">Edisi 07 · Data / ROI</span></span>
-    <div class="lang-toggle"><button data-lang-btn="en" class="active" aria-pressed="true">EN</button><button data-lang-btn="id" aria-pressed="false">ID</button></div>
-  </div>
+<div class="nav-right">
+<span class="crumb"><span>Issue 07 · Data / ROI-led</span></span>
+<div class="lang-toggle"><span class="active">EN</span><a href="../id/archive/issue-7-b.html">ID</a></div>
+</div>
 </div></nav>
 <article class="article alt accent-gold">
-  <div class="wrap narrow">
-    <span class="eyebrow"><span class="lang-en">Leading the Change · Data / ROI-led (Version B)</span><span class="lang-id">Memimpin Perubahan · Data / ROI (Versi B)</span></span>
-    <h1 class="lang-en">Issue 7 — Human-in-the-loop: accountability without losing control</h1>
-    <h1 class="lang-id">Edisi 7 — Human-in-the-loop: akuntabilitas tanpa kehilangan kendali</h1>
-    <div class="subjectbar">
-      <p class="subject lang-en"><span>Subject</span> 88% vs 22%: the control gap that decides whether agents are safe to scale</p>
-      <p class="subject lang-id"><span>Subjek</span> 88% vs 22%: celah kontrol yang menentukan aman-tidaknya agent buat di-scale</p>
-      <p class="preview lang-en">A reviewer's plain question — "who's accountable?" — has a concrete, governable answer. Here are the numbers behind it.</p>
-      <p class="preview lang-id">Pertanyaan sederhana dari reviewer — "siapa yang tanggung jawab?" — punya jawaban konkret dan bisa diatur. Ini angka-angka di baliknya.</p>
-    </div>
-    <p class="lang-en">Start with the person on the hook: a reviewer who asks, reasonably, "if the agent acts, who's accountable?" The answer is a design, and the design has numbers behind it.</p>
-    <p class="lang-id">Mulai dari orang yang paling terbebani: reviewer yang bertanya, secara wajar, "kalau agent yang bertindak, siapa yang tanggung jawab?" Jawabannya ada di desain sistemnya, dan desain itu punya angka di baliknya.</p>
-    <p class="lang-en">The headline risk statistic is stark: roughly 88% of organizations have experienced an AI-related security incident, while only about 22% treat their agents as identity-bearing with proper access controls (Figure 7.2; accelirate.com, 2026). That gap — powerful agents without their own identities — is the single biggest, most fixable source of agent risk. An agent on a shared login is untraceable; an agent with scoped credentials is fully attributable.</p>
-    <p class="lang-id">Statistik risiko utamanya cukup mengejutkan: sekitar 88% organisasi pernah mengalami insiden keamanan terkait AI, sementara cuma sekitar 22% yang memperlakukan agent-nya sebagai identity-bearing dengan kontrol akses yang layak (Gambar 7.2; accelirate.com, 2026). Celah itu — agent yang kuat tapi tanpa identitas sendiri — adalah sumber risiko agent terbesar sekaligus paling gampang diperbaiki. Agent di login bareng-bareng nggak bisa dilacak; agent dengan kredensial scoped bisa dipertanggungjawabkan sepenuhnya.</p>
+<div class="wrap narrow">
+<span class="eyebrow"><span>Leading the Change · Data / ROI-led (Version B)</span></span>
+<h1>Issue 7 — Human-in-the-loop: accountability without losing control</h1>
+
+<div class="subjectbar">
+<p class="subject"><span>Subject</span> 88% vs 22%: the control gap that decides whether agents are safe to scale</p>
+
+<p class="preview">A reviewer's plain question — "who's accountable?" — has a concrete, governable answer. Here are the numbers behind it.</p>
+
+</div>
+<p>Start with the person on the hook: a reviewer who asks, reasonably, "if the agent acts, who's accountable?" The answer is a design, and the design has numbers behind it.</p>
+
+<p>The headline risk statistic is stark: roughly 88% of organizations have experienced an AI-related security incident, while only about 22% treat their agents as identity-bearing with proper access controls (Figure 7.2; accelirate.com, 2026). That gap — powerful agents without their own identities — is the single biggest, most fixable source of agent risk. An agent on a shared login is untraceable; an agent with scoped credentials is fully attributable.</p>
+
 <figure class="fig">
-  <img src="../assets/img/i7_identity_gap.png" alt="Figure 7.2 — Bar chart: 88% of organizations had an AI security incident; only 22% treat agents as identity-bearing." loading="lazy">
-  <figcaption>
-    <span class="lang-en">Figure 7.2 — The guardrail gap: give every agent its own identity.</span>
-    <span class="lang-id">Gambar 7.2 — Celah guardrail yang ditutup identitas agent: beri tiap agent identitasnya sendiri.</span>
-    <span class="src lang-en">Data source: accelirate.com — ~88% had an AI-related security incident; ~22% treat agents as identity-bearing.</span>
-    <span class="src lang-id">Sumber data: accelirate.com — ~88% pernah kena insiden keamanan terkait AI; ~22% memperlakukan agent sebagai identity-bearing.</span>
-  </figcaption>
+<img alt="Figure 7.2 — Bar chart: 88% of organizations had an AI security incident; only 22% treat agents as identity-bearing." loading="lazy" src="../assets/img/i7_identity_gap.png"/>
+<figcaption>
+<span>Figure 7.2 — The guardrail gap: give every agent its own identity.</span>
+
+<span class="src">Data source: accelirate.com — ~88% had an AI-related security incident; ~22% treat agents as identity-bearing.</span>
+
+</figcaption>
 </figure>
-    <p class="lang-en">Accountability is engineered through two controls. First, autonomy levels (Figure 7.1): every agent is deployed at a defined level from suggest-only to act-after-approval, with unattended autonomy reserved for narrow, low-risk tasks. The level is a governance decision, set per workflow and auditable. Second, the human-in-the-loop gate: for consequential actions, a named person approves before execution and is accountable for the outcome — the agent is a preparer, not a decision-maker.</p>
-    <p class="lang-id">Akuntabilitas ini dibangun lewat dua kontrol. Pertama, level otonomi (Gambar 7.1): tiap agent dijalankan di level tertentu, dari suggest-only sampai act-after-approval, dengan otonomi tanpa pengawasan dibatasi untuk tugas sempit dan berisiko rendah. Level ini keputusan governance, diatur per alur kerja dan bisa diaudit. Kedua, gerbang human-in-the-loop: untuk tindakan yang konsekuensinya besar, ada satu orang yang ditunjuk buat menyetujui sebelum dieksekusi dan bertanggung jawab atas hasilnya — agent-nya cuma penyiap, bukan pengambil keputusan.</p>
+<p>Accountability is engineered through two controls. First, autonomy levels (Figure 7.1): every agent is deployed at a defined level from suggest-only to act-after-approval, with unattended autonomy reserved for narrow, low-risk tasks. The level is a governance decision, set per workflow and auditable. Second, the human-in-the-loop gate: for consequential actions, a named person approves before execution and is accountable for the outcome — the agent is a preparer, not a decision-maker.</p>
+
 <figure class="fig">
-  <img src="../assets/img/i7_autonomy_dial.png" alt="Figure 7.1 — Levels of autonomy, from suggest-only to full autonomy, with a marker showing most finance work sits at act-with-approval." loading="lazy">
-  <figcaption>
-    <span class="lang-en">Figure 7.1 — Autonomy is a dial you set, from suggest-only to bounded full autonomy.</span>
-    <span class="lang-id">Gambar 7.1 — Otonomi itu seperti dial yang kamu atur sendiri, dari sekadar-saran sampai otonomi penuh yang dibatasi.</span>
-    <span class="src lang-en">Data source: Original diagram, Finance Forward (2026).</span>
-    <span class="src lang-id">Sumber data: Diagram orisinal, Finance Forward (2026).</span>
-  </figcaption>
+<img alt="Figure 7.1 — Levels of autonomy, from suggest-only to full autonomy, with a marker showing most finance work sits at act-with-approval." loading="lazy" src="../assets/img/i7_autonomy_dial.png"/>
+<figcaption>
+<span>Figure 7.1 — Autonomy is a dial you set, from suggest-only to bounded full autonomy.</span>
+
+<span class="src">Data source: Original diagram, Finance Forward (2026).</span>
+
+</figcaption>
 </figure>
-    <p class="lang-en">For leadership weighing scale-up, this reframes the risk question productively. The exposure is not "agents are inherently uncontrollable." It's "agents deployed without identity, level-setting, and review are uncontrollable." Each of those is a checklist item, not a leap of faith. Insisting on all three moves an organization from the exposed 88% toward the governed 22%.</p>
-    <p class="lang-id">Buat leadership yang mempertimbangkan scale-up, ini bikin pertanyaan risikonya jadi lebih produktif. Eksposurnya bukan "agent pada dasarnya nggak bisa dikontrol." Tapi "agent yang dijalankan tanpa identitas, penetapan level, dan review-lah yang nggak bisa dikontrol." Masing-masing itu item checklist, bukan lompatan keyakinan buta. Dengan memastikan ketiganya, organisasi bergerak dari yang rentan (88%) menuju yang ter-governance (22%).</p>
-    <p class="lang-en">The ROI framing: strong governance is not a tax on adoption — it's what makes adoption defensible enough to scale. Teams that wire in identity and review from the start avoid the incidents, audit findings, and trust-erosion that stall the exposed majority. Control is the enabler, not the brake.</p>
-    <p class="lang-id">Dari sisi ROI: governance yang kuat bukan beban buat adopsi — justru itu yang bikin adopsinya cukup meyakinkan untuk di-scale. Tim yang menanamkan identitas dan review sejak awal terhindar dari insiden, temuan audit, dan erosi kepercayaan yang bikin mayoritas yang rentan itu mandek. Kontrol itu pendorong, bukan rem.</p>
-    <p class="lang-en">The bottom line to forward: assign every agent its own identity, set an explicit autonomy level per workflow, and keep a human accountable at the gate. Do those three, and "who's responsible?" has a clean, auditable answer — a named human, every time.</p>
-    <p class="lang-id">Intinya buat diteruskan: beri tiap agent identitasnya sendiri, tetapkan level otonomi yang jelas per alur kerja, dan pastikan ada manusia yang bertanggung jawab di gerbang. Lakukan tiga hal itu, dan "siapa yang tanggung jawab?" punya jawaban yang jelas dan bisa diaudit — satu orang yang jelas namanya, setiap saat.</p>
-    <div class="sources">
-      <h4 class="lang-en">Sources</h4><h4 class="lang-id">Sumber</h4>
-      <ul class="lang-en"><li>accelirate.com — ~88% of orgs had an AI-related security incident; ~22% treat agents as identity-bearing.</li></ul>
-      <ul class="lang-id"><li>accelirate.com — ~88% organisasi pernah kena insiden keamanan terkait AI; ~22% memperlakukan agent sebagai identity-bearing.</li></ul>
-    </div>
-    <div class="alt-links">
-      <h4 class="lang-en">Other versions of this issue</h4>
-      <h4 class="lang-id">Versi lain edisi ini</h4>
-      <p class="lang-en">
-        <a href="issue-7-a.html">Story-led (A) →</a> &nbsp;·&nbsp;
+<p>For leadership weighing scale-up, this reframes the risk question productively. The exposure is not "agents are inherently uncontrollable." It's "agents deployed without identity, level-setting, and review are uncontrollable." Each of those is a checklist item, not a leap of faith. Insisting on all three moves an organization from the exposed 88% toward the governed 22%.</p>
+
+<p>The ROI framing: strong governance is not a tax on adoption — it's what makes adoption defensible enough to scale. Teams that wire in identity and review from the start avoid the incidents, audit findings, and trust-erosion that stall the exposed majority. Control is the enabler, not the brake.</p>
+
+<p>The bottom line to forward: assign every agent its own identity, set an explicit autonomy level per workflow, and keep a human accountable at the gate. Do those three, and "who's responsible?" has a clean, auditable answer — a named human, every time.</p>
+
+<div class="sources">
+<h4>Sources</h4>
+<ul><li>accelirate.com — ~88% of orgs had an AI-related security incident; ~22% treat agents as identity-bearing.</li></ul>
+
+</div>
+<div class="alt-links">
+<h4>Other versions of this issue</h4>
+
+<p>
+<a href="issue-7-a.html">Story-led (A) →</a>  · 
         <a href="../issues/issue-7.html">Flagship (F) →</a>
-      </p>
-      <p class="lang-id">
-        <a href="issue-7-a.html">Gaya Cerita (A) →</a> &nbsp;·&nbsp;
-        <a href="../issues/issue-7.html">Andalan (F) →</a>
-      </p>
-    </div>
-  </div>
+</p>
+
+</div>
+</div>
 </article>
 <footer class="site-foot">
-  <div class="wrap">
-    <p><strong>Finance Forward</strong> <span class="lang-en">— an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</span><span class="lang-id">— surat internal untuk tim Finance &amp; Revenue-Cycle Siloam Hospitals.</span></p>
-    <p class="muted lang-en">A chatbot answers; an agent acts — and a person still owns the decision.</p>
-    <p class="muted lang-id">Chatbot itu menjawab; agent itu bertindak — dan keputusan akhir tetap di tangan manusia.</p>
-    <p class="muted small lang-en">Issues 1–12 published · Issues 13–15 in progress. Educational internal content; statistics cited per each issue.</p>
-    <p class="muted small lang-id">Edisi 1–12 sudah terbit · Edisi 13–15 masih digarap. Konten edukasi internal; statistik dikutip di tiap edisi.</p>
-  </div>
+<div class="wrap">
+<p><strong>Finance Forward</strong> <span>— an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</span></p>
+<p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+
+<p class="muted small">Issues 1–12 published · Issues 13–15 in progress. Educational internal content; statistics cited per each issue.</p>
+
+</div>
 </footer>
-<script src="../assets/lang.js" defer></script>
+
 </body>
 </html>
