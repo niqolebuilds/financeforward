@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{if(localStorage.getItem('ff_lang')==='id')document.documentElement.classList.add('show-id')}catch(e){}</script>
 <title>Issue 4 · Story-led — Finance Forward</title>
 <meta name="description" content="Sari came in braced for 400 denials. Most of the first pass was already done.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,47 +13,85 @@
 </head>
 <body class="reading">
 
-<nav class="topnav"><div class="wrap"><a href="../archive/index.html">← Archive</a><span class="crumb">Issue 04 · Story-led</span></div></nav>
+<nav class="topnav"><div class="wrap"><a href="../archive/index.html">← Archive</a>
+  <div class="nav-right">
+    <span class="crumb"><span class="lang-en">Issue 04 · Story-led</span><span class="lang-id">Edisi 04 · Gaya Cerita</span></span>
+    <div class="lang-toggle"><button data-lang-btn="en" class="active" aria-pressed="true">EN</button><button data-lang-btn="id" aria-pressed="false">ID</button></div>
+  </div>
+</div></nav>
 <article class="article alt accent-navy">
   <div class="wrap narrow">
-    <span class="eyebrow">Agents on our own turf · Story-led (Version A)</span>
-    <h1>Issue 4 — Proof at home: agents in the revenue cycle</h1>
+    <span class="eyebrow"><span class="lang-en">Agents on our own turf · Story-led (Version A)</span><span class="lang-id">Agent di ranah kita sendiri · Gaya Cerita (Versi A)</span></span>
+    <h1 class="lang-en">Issue 4 — Proof at home: agents in the revenue cycle</h1>
+    <h1 class="lang-id">Edisi 4 — Bukti di lapangan sendiri: agent dalam revenue cycle</h1>
     <div class="subjectbar">
-      <p class="subject"><span>Subject</span> The Monday the denial queue worked itself</p>
-      <p class="preview">Sari came in braced for 400 denials. Most of the first pass was already done.</p>
+      <p class="subject lang-en"><span>Subject</span> The Monday the denial queue worked itself</p>
+      <p class="subject lang-id"><span>Subjek</span> Hari Senin ketika antrean denial mengerjakan dirinya sendiri</p>
+      <p class="preview lang-en">Sari came in braced for 400 denials. Most of the first pass was already done.</p>
+      <p class="preview lang-id">Sari datang sudah siap menghadapi 400 denial. Sebagian besar dari pass pertama ternyata sudah selesai.</p>
     </div>
-    <p>Sari runs a denials team at one of our hospitals. For years her Monday started the same way: a queue of 300–400 denied claims, and a whole morning spent triaging — which payer, which reason code, which ones are worth appealing, which are just missing a document. The real work, the judgment calls, couldn't start until that sorting was done. Often it was lunchtime before she got there.</p>
+    <p class="lang-en">Sari runs a denials team at one of our hospitals. For years her Monday started the same way: a queue of 300–400 denied claims, and a whole morning spent triaging — which payer, which reason code, which ones are worth appealing, which are just missing a document. The real work, the judgment calls, couldn't start until that sorting was done. Often it was lunchtime before she got there.</p>
+    <p class="lang-id">Sari mengelola tim denials di salah satu rumah sakit kita. Selama bertahun-tahun, hari Seninnya selalu dimulai dengan cara yang sama: antrean 300–400 klaim yang ditolak, dan satu pagi penuh dihabiskan buat triase — payer mana, kode alasan apa, mana yang layak diajukan banding, mana yang cuma kurang satu dokumen. Pekerjaan sebenarnya, keputusan-keputusan pentingnya, baru bisa dimulai setelah penyortiran itu selesai. Sering kali sudah jam makan siang baru dia sampai ke situ.</p>
 <figure class="fig">
   <img src="../assets/img/i4_rcm_flow.svg" alt="Figure 4.1 — The denial-to-resubmission loop: the agent does the legwork; a human approves before anything goes back out." loading="lazy">
-  <figcaption>Figure 4.1 — The denial-to-resubmission loop: the agent does the legwork; a human approves before anything goes back out.<span class="src">Data source: Original schematic (Finance Forward); throughput per solventum.com / healthcarefinancenews.com.</span></figcaption>
+  <figcaption>
+    <span class="lang-en">Figure 4.1 — The denial-to-resubmission loop: the agent does the legwork; a human approves before anything goes back out.</span>
+    <span class="lang-id">Gambar 4.1 — Alur denial-ke-pengajuan ulang: agent yang mengerjakan hal teknisnya; manusia yang menyetujui sebelum apa pun dikirim kembali.</span>
+    <span class="src lang-en">Data source: Original schematic (Finance Forward); throughput per solventum.com / healthcarefinancenews.com.</span>
+    <span class="src lang-id">Sumber data: Skema orisinal (Finance Forward); throughput mengikuti solventum.com / healthcarefinancenews.com.</span>
+  </figcaption>
 </figure>
-<p>This particular Monday was different. Over the weekend an agent had worked the queue. It read each denial, pulled the reason code, checked the claim's live status on the payer portal, gathered the supporting documentation, and drafted an appeal where the case was clear. When Sari logged in, the queue wasn't a pile anymore — it was sorted, most of it pre-drafted, with the genuinely tricky cases flagged and set aside for her. She didn't spend the morning sorting. She spent it deciding.</p>
-<p><strong>This is our line made real: </strong>a chatbot answers; an agent acts. A chatbot could have told Sari what reason code 197 means. The agent went and did something about 380 of them — and then stopped, on purpose, at the one place that matters.</p>
+<p class="lang-en">This particular Monday was different. Over the weekend an agent had worked the queue. It read each denial, pulled the reason code, checked the claim's live status on the payer portal, gathered the supporting documentation, and drafted an appeal where the case was clear. When Sari logged in, the queue wasn't a pile anymore — it was sorted, most of it pre-drafted, with the genuinely tricky cases flagged and set aside for her. She didn't spend the morning sorting. She spent it deciding.</p>
+<p class="lang-id">Senin yang satu ini beda. Sepanjang akhir pekan, agent sudah mengerjakan antreannya. Dia membaca tiap denial, mengambil kode alasannya, mengecek status langsung klaim di portal payer, mengumpulkan dokumentasi pendukung, dan menyiapkan draf banding untuk kasus yang jelas. Waktu Sari login, antreannya bukan tumpukan lagi — sudah tersortir, sebagian besar sudah ada draf awalnya, dengan kasus-kasus yang benar-benar rumit ditandai dan disisihkan buat dia. Dia nggak menghabiskan paginya untuk menyortir. Dia menghabiskannya untuk memutuskan.</p>
+<p class="lang-en"><strong>This is our line made real: </strong>a chatbot answers; an agent acts. A chatbot could have told Sari what reason code 197 means. The agent went and did something about 380 of them — and then stopped, on purpose, at the one place that matters.</p>
+<p class="lang-id"><strong>Ini kalimat andalan kita yang jadi nyata: </strong>chatbot menjawab; agent bertindak. Chatbot bisa saja memberi tahu Sari apa arti kode alasan 197. Agent langsung melakukan sesuatu terhadap 380 di antaranya — lalu berhenti, dengan sengaja, di satu titik yang memang penting.</p>
 <figure class="fig">
   <img src="../assets/img/i4_capacity.svg" alt="Figure 4.2 — Same volume of status checks, a fraction of the human hours — capacity that moves to exception work." loading="lazy">
-  <figcaption>Figure 4.2 — Same volume of status checks, a fraction of the human hours — capacity that moves to exception work.<span class="src">Data source: solventum.com; healthcarefinancenews.com — one agent ≈ 3,000+ checks/day ≈ 5–8 FTEs (~$350K/yr).</span></figcaption>
+  <figcaption>
+    <span class="lang-en">Figure 4.2 — Same volume of status checks, a fraction of the human hours — capacity that moves to exception work.</span>
+    <span class="lang-id">Gambar 4.2 — Volume pengecekan status yang sama, jam kerja manusia yang jauh lebih sedikit — kapasitas yang pindah ke pekerjaan exception.</span>
+    <span class="src lang-en">Data source: solventum.com; healthcarefinancenews.com — one agent ≈ 3,000+ checks/day ≈ 5–8 FTEs (~$350K/yr).</span>
+    <span class="src lang-id">Sumber data: solventum.com; healthcarefinancenews.com — satu agent ≈ 3.000+ pengecekan/hari ≈ 5–8 FTE (~$350K/tahun).</span>
+  </figcaption>
 </figure>
-<p>Because here's the safeguard, and Sari checked it first (Figure 4.1). Nothing was resubmitted. The agent read, checked, and drafted at machine scale, then hit a human gate. Every appeal waited for Sari's review and approval before going back to the payer. Every action the agent took was logged under its own scoped "agent identity," so if anyone asked who did what, the trail was cleaner than a hundred manual clicks would have left. The agent carried the volume; Sari carried the decision.</p>
-<p>What did that buy her team? Look at Figure 4.2. Running thousands of status checks a day by hand is the equivalent of five to eight full-time people. Handing that to an agent didn't shrink Sari's team — it moved them off the treadmill and onto the exceptions, the appeals worth fighting, and frankly the parts of the job that use their training. One of her analysts told her, "I finally feel like I'm doing collections, not data entry."</p>
-<p>That's the quiet promise of agents in the revenue cycle. Not fewer people — better-spent people. The denial that needed a phone call still gets a human who knows the payer. The judgment about what's worth appealing stays with the team that's earned that instinct. The grind found a new owner.</p>
-<div class="nudge"><span class="nudge-k">Your next step:</span> Think of your worst recurring queue — the one you dread on Monday. Reply with what it is and roughly how many items hit it a week. We're building a shortlist of first-pilot candidates, and real queues beat hypotheticals every time.</div>
-    <div class="sources"><h4>Sources</h4><ul><li>solventum.com; healthcarefinancenews.com — one agent ≈ 3,000+ claim-status checks/day ≈ 5–8 FTEs (~$350K/yr).</li><li>McKinsey — 30–60% reduction in cost-to-collect (healthcare RCM).</li><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li></ul></div>
+<p class="lang-en">Because here's the safeguard, and Sari checked it first (Figure 4.1). Nothing was resubmitted. The agent read, checked, and drafted at machine scale, then hit a human gate. Every appeal waited for Sari's review and approval before going back to the payer. Every action the agent took was logged under its own scoped "agent identity," so if anyone asked who did what, the trail was cleaner than a hundred manual clicks would have left. The agent carried the volume; Sari carried the decision.</p>
+<p class="lang-id">Sebab inilah pengamannya, dan Sari mengeceknya duluan (Gambar 4.1). Nggak ada yang diajukan ulang begitu saja. Agent membaca, memeriksa, dan menyiapkan draf dalam skala mesin, lalu berhenti di gerbang manusia. Setiap banding menunggu review dan persetujuan Sari sebelum dikirim kembali ke payer. Setiap tindakan yang dilakukan agent tercatat di bawah "agent identity" scoped miliknya sendiri, jadi kalau ada yang tanya siapa yang melakukan apa, jejaknya lebih rapi dibanding seratus klik manual sekalipun. Agent yang menanggung volumenya; Sari yang menanggung keputusannya.</p>
+<p class="lang-en">What did that buy her team? Look at Figure 4.2. Running thousands of status checks a day by hand is the equivalent of five to eight full-time people. Handing that to an agent didn't shrink Sari's team — it moved them off the treadmill and onto the exceptions, the appeals worth fighting, and frankly the parts of the job that use their training. One of her analysts told her, "I finally feel like I'm doing collections, not data entry."</p>
+<p class="lang-id">Apa yang didapat timnya dari ini? Lihat Gambar 4.2. Menjalankan ribuan pengecekan status per hari secara manual setara dengan lima sampai delapan orang penuh waktu. Menyerahkan itu ke agent nggak bikin tim Sari menyusut — malah memindahkan mereka dari treadmill ke exception, banding yang memang layak diperjuangkan, dan sejujurnya bagian pekerjaan yang benar-benar memakai keahlian mereka. Salah satu analisnya bilang, "Akhirnya saya merasa lagi ngerjain collections, bukan data entry."</p>
+<p class="lang-en">That's the quiet promise of agents in the revenue cycle. Not fewer people — better-spent people. The denial that needed a phone call still gets a human who knows the payer. The judgment about what's worth appealing stays with the team that's earned that instinct. The grind found a new owner.</p>
+<p class="lang-id">Itulah janji diam-diam dari agent dalam revenue cycle. Bukan orang yang lebih sedikit — tapi orang yang waktunya dipakai lebih baik. Denial yang butuh telepon tetap ditangani manusia yang paham payer-nya. Penilaian soal mana yang layak diperjuangkan tetap ada di tangan tim yang sudah punya insting itu. Kerja beratnya cuma pindah tangan.</p>
+<div class="nudge lang-en"><span class="nudge-k">Your next step:</span> Think of your worst recurring queue — the one you dread on Monday. Reply with what it is and roughly how many items hit it a week. We're building a shortlist of first-pilot candidates, and real queues beat hypotheticals every time.</div>
+<div class="nudge lang-id"><span class="nudge-k">Langkah berikutnya:</span> Pikirkan antrean berulang paling menyebalkan yang kamu punya — yang bikin kamu males tiap Senin. Balas dengan apa itu dan kira-kira berapa banyak item yang masuk per minggu. Kita lagi menyusun shortlist kandidat pilot pertama, dan antrean beneran selalu lebih bagus daripada hipotesis.</div>
+    <div class="sources">
+      <h4 class="lang-en">Sources</h4><h4 class="lang-id">Sumber</h4>
+      <ul class="lang-en"><li>solventum.com; healthcarefinancenews.com — one agent ≈ 3,000+ claim-status checks/day ≈ 5–8 FTEs (~$350K/yr).</li><li>McKinsey — 30–60% reduction in cost-to-collect (healthcare RCM).</li><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li></ul>
+      <ul class="lang-id"><li>solventum.com; healthcarefinancenews.com — satu agent ≈ 3.000+ pengecekan status klaim/hari ≈ 5–8 FTE (~$350K/tahun).</li><li>McKinsey — penurunan cost-to-collect 30–60% (RCM kesehatan).</li><li>kore.ai; Generative, Inc. (2026) — "chatbot menjawab; agent bertindak."</li></ul>
+    </div>
     <div class="alt-links">
-      <h4>Other versions of this issue</h4>
-      <p>
-        
-        <a href="issue-4-b.html">Data / ROI-led (B) →</a> &nbsp;·&nbsp; 
+      <h4 class="lang-en">Other versions of this issue</h4>
+      <h4 class="lang-id">Versi lain edisi ini</h4>
+      <p class="lang-en">
+
+        <a href="issue-4-b.html">Data / ROI-led (B) →</a> &nbsp;·&nbsp;
         <a href="../issues/issue-4.html">Flagship (F) →</a>
+      </p>
+      <p class="lang-id">
+
+        <a href="issue-4-b.html">Data / ROI (B) →</a> &nbsp;·&nbsp;
+        <a href="../issues/issue-4.html">Andalan (F) →</a>
       </p>
     </div>
   </div>
 </article>
 <footer class="site-foot">
   <div class="wrap">
-    <p><strong>Finance Forward</strong> — an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</p>
-    <p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
-    <p class="muted small">Issues 1–6 published · Issues 7–15 in progress. Educational internal content; statistics cited per each issue.</p>
+    <p><strong>Finance Forward</strong> <span class="lang-en">— an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</span><span class="lang-id">— surat internal untuk tim Finance &amp; Revenue-Cycle Siloam Hospitals.</span></p>
+    <p class="muted lang-en">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+    <p class="muted lang-id">Chatbot itu menjawab; agent itu bertindak — dan keputusan akhir tetap di tangan manusia.</p>
+    <p class="muted small lang-en">Issues 1–12 published · Issues 13–15 in progress. Educational internal content; statistics cited per each issue.</p>
+    <p class="muted small lang-id">Edisi 1–12 sudah terbit · Edisi 13–15 masih digarap. Konten edukasi internal; statistik dikutip di tiap edisi.</p>
   </div>
 </footer>
+<script src="../assets/lang.js" defer></script>
 </body>
 </html>

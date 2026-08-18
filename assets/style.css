@@ -1,6 +1,6 @@
 :root{
   --navy:#1b3a5b; --navy-2:#14314f; --teal:#2a9d8f; --teal-d:#218a7e;
-  --coral:#c0492f; --coral-2:#e76f51; --gold:#e9c46a; --ink:#22303c;
+  --coral:#c0492f; --coral-2:#e76f51; --gold:#e9c46a; --gold-d:#96730f; --ink:#22303c;
   --grey:#6b7a86; --line:#e3e9ee; --bg:#f6f8fa; --card:#ffffff;
   --maxw:1120px; --narrow:720px;
   --serif:"Newsreader",Georgia,"Times New Roman",serif;
@@ -17,8 +17,26 @@ h1,h2,h3,h4{font-family:var(--serif);line-height:1.15;color:var(--navy);margin:0
 .eyebrow{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--teal-d);margin-bottom:.6rem}
 .muted{color:var(--grey)} .small{font-size:.82rem}
 
+/* No orphaned single words on their own line */
+p,li,figcaption,.subject,.preview,.lede,.deck,.mantra,.track-blurb,.card .deck{text-wrap:pretty}
+h1,h2,h3,.card h3{text-wrap:balance}
+
+/* LANGUAGE TOGGLE (EN/ID) */
+html.show-id .lang-en{display:none!important}
+html:not(.show-id) .lang-id{display:none!important}
+.lang-toggle{display:inline-flex;align-items:center;background:#eef1f4;border-radius:999px;padding:3px;gap:2px;flex:none}
+.lang-toggle button{border:none;background:transparent;padding:5px 13px;border-radius:999px;cursor:pointer;color:var(--grey);font-family:var(--sans);font-weight:700;font-size:.76rem;letter-spacing:.03em}
+.lang-toggle button.active{background:var(--navy);color:#fff}
+.lang-toggle button:hover:not(.active){color:var(--navy)}
+.nav-right{display:flex;align-items:center;gap:14px}
+.hero-lang{position:absolute;top:28px;right:24px}
+.hero-lang .lang-toggle{background:rgba(255,255,255,.14)}
+.hero-lang .lang-toggle button{color:#cddbe6}
+.hero-lang .lang-toggle button.active{background:#fff;color:var(--navy)}
+@media(max-width:640px){.hero-lang{position:static;margin-bottom:18px;display:flex}}
+
 /* HERO */
-.hero{background:
+.hero{position:relative;background:
     radial-gradient(1200px 500px at 80% -10%, rgba(42,157,143,.22), transparent 60%),
     linear-gradient(160deg,var(--navy) 0%, var(--navy-2) 60%, #0f2740 100%);
   color:#eaf1f6;padding:88px 0 76px}
@@ -37,6 +55,8 @@ h1,h2,h3,h4{font-family:var(--serif);line-height:1.15;color:var(--navy);margin:0
 .track{padding:64px 0}
 .track:nth-child(odd){background:var(--bg)}
 .track-proof{background:#eef3f7}
+.track.track-lead{background:#faf6ec}
+.track-lead .track-tag{color:var(--gold-d)}
 .track-head{max-width:640px;margin-bottom:30px}
 .track-tag{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--teal-d)}
 .track-proof .track-tag{color:var(--navy)}
@@ -57,6 +77,9 @@ h1,h2,h3,h4{font-family:var(--serif);line-height:1.15;color:var(--navy);margin:0
 .card.accent-navy .pill-flag{background:#e8eef4;color:var(--navy)}
 .card{border-top:4px solid var(--teal)}
 .card.accent-navy{border-top:4px solid var(--navy)}
+.card.accent-gold{border-top:4px solid var(--gold)}
+.card.accent-gold .readmore{color:var(--gold-d)}
+.card.accent-gold .pill-flag{background:#fbf3df;color:var(--gold-d)}
 
 /* EXPLAIN */
 .explain{padding:56px 0 72px;background:#fff;border-top:1px solid var(--line)}
@@ -74,16 +97,21 @@ h1,h2,h3,h4{font-family:var(--serif);line-height:1.15;color:var(--navy);margin:0
 .article{padding:52px 0 40px;background:#fff}
 .article .eyebrow{color:var(--teal-d)}
 .article.accent-navy .eyebrow{color:var(--navy)}
+.article.accent-gold .eyebrow{color:var(--gold-d)}
 .article h1{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:600;margin-bottom:.5em}
 .article .article-top{border-top:5px solid var(--teal)}
 .subjectbar{border-left:4px solid var(--teal);background:#f3faf8;padding:14px 18px;border-radius:0 10px 10px 0;margin:0 0 28px}
 .article.accent-navy .subjectbar{border-left-color:var(--navy);background:#eef3f7}
+.article.accent-gold .subjectbar{border-left-color:var(--gold);background:#fbf6e8}
 .subject{margin:0 0 .3em;font-weight:600;color:var(--ink)}
 .subject span{display:inline-block;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);font-weight:700;margin-right:8px}
 .preview{margin:0;color:var(--grey);font-style:italic}
 .article p{font-size:1.08rem;margin:0 0 1.15em}
 .article .strong{font-weight:600}
 .article p strong{color:var(--navy)}
+.steps{margin:0 0 1.2em;padding-left:1.35em}
+.steps li{font-size:1.08rem;margin-bottom:.6em}
+.steps li strong{color:var(--navy)}
 
 /* FIGURES */
 .fig{margin:30px 0;padding:18px;background:#fbfcfd;border:1px solid var(--line);border-radius:14px}

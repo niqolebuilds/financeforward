@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{if(localStorage.getItem('ff_lang')==='id')document.documentElement.classList.add('show-id')}catch(e){}</script>
 <title>Issue 6 · Story-led — Finance Forward</title>
 <meta name="description" content="A suspicious payment tried to slip through overnight. An agent saw it — and woke the right human.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,46 +13,83 @@
 </head>
 <body class="reading">
 
-<nav class="topnav"><div class="wrap"><a href="../archive/index.html">← Archive</a><span class="crumb">Issue 06 · Story-led</span></div></nav>
+<nav class="topnav"><div class="wrap"><a href="../archive/index.html">← Archive</a>
+  <div class="nav-right">
+    <span class="crumb"><span class="lang-en">Issue 06 · Story-led</span><span class="lang-id">Edisi 06 · Gaya Cerita</span></span>
+    <div class="lang-toggle"><button data-lang-btn="en" class="active" aria-pressed="true">EN</button><button data-lang-btn="id" aria-pressed="false">ID</button></div>
+  </div>
+</div></nav>
 <article class="article alt accent-navy">
   <div class="wrap narrow">
-    <span class="eyebrow">Agents on our own turf · Story-led (Version A)</span>
-    <h1>Issue 6 — Agents in treasury, fraud, and compliance</h1>
+    <span class="eyebrow"><span class="lang-en">Agents on our own turf · Story-led (Version A)</span><span class="lang-id">Agent di lapangan kita sendiri · Gaya Cerita (Versi A)</span></span>
+    <h1 class="lang-en">Issue 6 — Agents in treasury, fraud, and compliance</h1>
+    <h1 class="lang-id">Edisi 6 — Agent di treasury, fraud, dan compliance</h1>
     <div class="subjectbar">
-      <p class="subject"><span>Subject</span> The 2 a.m. transaction that got caught</p>
-      <p class="preview">A suspicious payment tried to slip through overnight. An agent saw it — and woke the right human.</p>
+      <p class="subject lang-en"><span>Subject</span> The 2 a.m. transaction that got caught</p>
+      <p class="subject lang-id"><span>Subjek</span> Transaksi jam 2 pagi yang berhasil ketangkap</p>
+      <p class="preview lang-en">A suspicious payment tried to slip through overnight. An agent saw it — and woke the right human.</p>
+      <p class="preview lang-id">Sebuah pembayaran mencurigakan coba lolos di tengah malam. Agent yang melihatnya — dan membangunkan orang yang tepat.</p>
     </div>
-    <p>Rina works in our treasury and controls function, and she tells this story better than I do. One night, a payment ran that didn't fit any normal pattern — odd amount, unusual beneficiary, a time of day no one on her team is at a desk. In the old world, that transaction would have sat quietly until someone happened to review the log days later. Instead, an agent watching the transaction stream scored it as anomalous, held it, and sent an alert. By the time Rina had coffee, the flag was waiting — with the reasoning attached.</p>
+    <p class="lang-en">Rina works in our treasury and controls function, and she tells this story better than I do. One night, a payment ran that didn't fit any normal pattern — odd amount, unusual beneficiary, a time of day no one on her team is at a desk. In the old world, that transaction would have sat quietly until someone happened to review the log days later. Instead, an agent watching the transaction stream scored it as anomalous, held it, and sent an alert. By the time Rina had coffee, the flag was waiting — with the reasoning attached.</p>
+    <p class="lang-id">Rina bekerja di fungsi treasury dan controls kita, dan dia yang cerita ini lebih baik dari saya. Suatu malam, ada pembayaran yang jalan tanpa cocok dengan pola normal mana pun — jumlahnya aneh, penerimanya nggak biasa, di jam yang nggak ada satu pun orang timnya di meja kerja. Di dunia lama, transaksi itu bakal diam saja sampai suatu hari ada orang yang kebetulan review log-nya beberapa hari kemudian. Tapi sekarang, agent yang memantau arus transaksi menandainya sebagai anomali, menahannya, dan mengirim alert. Waktu Rina baru sempat ngopi, flag-nya sudah menunggu — lengkap dengan alasannya.</p>
 <figure class="fig">
   <img src="../assets/img/i6_domains.svg" alt="Figure 6.1 — Three back-office fronts where agents earn their keep — each ending at a human who approves the call." loading="lazy">
-  <figcaption>Figure 6.1 — Three back-office fronts where agents earn their keep — each ending at a human who approves the call.<span class="src">Data source: Original schematic (Finance Forward).</span></figcaption>
+  <figcaption>
+    <span class="lang-en">Figure 6.1 — Three back-office fronts where agents earn their keep — each ending at a human who approves the call.</span>
+    <span class="lang-id">Gambar 6.1 — Tiga lini back-office tempat agent membuktikan diri — semuanya berakhir di manusia yang menyetujui keputusan.</span>
+    <span class="src lang-en">Data source: Original schematic (Finance Forward).</span>
+    <span class="src lang-id">Sumber data: Skema orisinal (Finance Forward).</span>
+  </figcaption>
 </figure>
-<p>That's three different back-office jobs in one small story, and agents are quietly reshaping all of them (Figure 6.1). In treasury, agents sweep balances, forecast cash, and flag idle funds. In fraud, they watch transactions, score anomalies, and freeze-and-alert. In compliance, they screen vendors, check activity against policy, and assemble the evidence an auditor will ask for. Different fronts, same pattern — our line, again: a chatbot answers; an agent acts.</p>
-<p><strong>But here's what Rina checked before she trusted any of it: </strong>the agent held and alerted — it did not unilaterally reverse the payment. The decision to release or block stayed with a human. In every one of these domains, the agent does the watching and the assembling; a person approves the call.</p>
+<p class="lang-en">That's three different back-office jobs in one small story, and agents are quietly reshaping all of them (Figure 6.1). In treasury, agents sweep balances, forecast cash, and flag idle funds. In fraud, they watch transactions, score anomalies, and freeze-and-alert. In compliance, they screen vendors, check activity against policy, and assemble the evidence an auditor will ask for. Different fronts, same pattern — our line, again: a chatbot answers; an agent acts.</p>
+<p class="lang-id">Itu tiga pekerjaan back-office berbeda dalam satu cerita kecil, dan agent diam-diam membentuk ulang semuanya (Gambar 6.1). Di treasury, agent sweep saldo, forecast cash, dan menandai dana yang menganggur. Di fraud, mereka memantau transaksi, menilai anomali, dan freeze-and-alert. Di compliance, mereka screening vendor, cek aktivitas terhadap kebijakan, dan menyusun bukti yang bakal ditanyakan auditor. Lini berbeda, pola sama — kalimat kita lagi: chatbot menjawab; agent bertindak.</p>
+<p class="lang-en"><strong>But here's what Rina checked before she trusted any of it: </strong>the agent held and alerted — it did not unilaterally reverse the payment. The decision to release or block stayed with a human. In every one of these domains, the agent does the watching and the assembling; a person approves the call.</p>
+<p class="lang-id"><strong>Tapi ini yang dicek Rina sebelum dia percaya semuanya: </strong>agent-nya menahan dan mengirim alert — dia nggak membatalkan pembayaran secara sepihak. Keputusan buat melepas atau memblokir tetap di tangan manusia. Di setiap domain ini, agent yang memantau dan menyusun; manusia yang menyetujui keputusannya.</p>
 <figure class="fig">
   <img src="../assets/img/i6_security_gap.svg" alt="Figure 6.2 — The gap agent identity closes: most orgs have had an AI security incident; few give agents proper identity controls." loading="lazy">
-  <figcaption>Figure 6.2 — The gap agent identity closes: most orgs have had an AI security incident; few give agents proper identity controls.<span class="src">Data source: accelirate.com — ~88% had an AI-related security incident; ~22% treat agents as identity-bearing.</span></figcaption>
+  <figcaption>
+    <span class="lang-en">Figure 6.2 — The gap agent identity closes: most orgs have had an AI security incident; few give agents proper identity controls.</span>
+    <span class="lang-id">Gambar 6.2 — Celah yang ditutup identitas agent: kebanyakan organisasi pernah kena insiden keamanan AI; sedikit yang memberi agent kontrol identitas yang layak.</span>
+    <span class="src lang-en">Data source: accelirate.com — ~88% had an AI-related security incident; ~22% treat agents as identity-bearing.</span>
+    <span class="src lang-id">Sumber data: accelirate.com — ~88% pernah kena insiden keamanan terkait AI; ~22% memperlakukan agent sebagai identity-bearing.</span>
+  </figcaption>
 </figure>
-<p>That safeguard matters more here than anywhere, because these jobs touch money movement and regulators. Which is why the least glamorous part is the most important: agent identity. Every agent gets its own scoped credentials — access to exactly what it needs and nothing more — and every action it takes is logged. When Rina reviewed the night's flag, she could see precisely what the agent looked at, why it scored the payment as it did, and that it hadn't touched anything it shouldn't. That's not a black box making midnight decisions. That's a tireless night-shift analyst that always shows its work and always asks before acting.</p>
-<p>The reassurance I'd offer anyone in these functions: agents don't replace the judgment that makes you good at this. The instinct for what smells wrong, the read on which vendor answer is evasive, the call on whether to hold a payment — those stay yours. What changes is that you're no longer the one who has to be awake at 2 a.m. to catch it. The watching scales; the deciding stays human.</p>
-<div class="nudge"><span class="nudge-k">Your next step:</span> Think of one thing in your area you wish someone were watching around the clock — a payment pattern, a limit, a policy breach. Reply with it; these "always-on watcher" jobs are often the easiest, safest place to let an agent prove itself.</div>
-    <div class="sources"><h4>Sources</h4><ul><li>accelirate.com — ~88% of orgs had an AI-related security incident; ~22% treat agents as identity-bearing.</li><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li></ul></div>
+<p class="lang-en">That safeguard matters more here than anywhere, because these jobs touch money movement and regulators. Which is why the least glamorous part is the most important: agent identity. Every agent gets its own scoped credentials — access to exactly what it needs and nothing more — and every action it takes is logged. When Rina reviewed the night's flag, she could see precisely what the agent looked at, why it scored the payment as it did, and that it hadn't touched anything it shouldn't. That's not a black box making midnight decisions. That's a tireless night-shift analyst that always shows its work and always asks before acting.</p>
+<p class="lang-id">Pengaman itu lebih penting di sini daripada di mana pun, karena pekerjaan ini menyentuh pergerakan uang dan regulator. Makanya bagian yang paling nggak glamor justru yang paling penting: identitas agent. Tiap agent dapat kredensial scoped miliknya sendiri — akses persis ke apa yang dia perlukan dan nggak lebih — dan tiap tindakannya tercatat. Waktu Rina review flag malam itu, dia bisa lihat persis apa yang dilihat agent, kenapa dia menilai pembayaran itu seperti itu, dan bahwa dia nggak menyentuh apa pun yang seharusnya nggak disentuh. Itu bukan kotak hitam yang bikin keputusan tengah malam. Itu analis shift malam yang nggak pernah capek, yang selalu menunjukkan kerjanya dan selalu minta izin sebelum bertindak.</p>
+<p class="lang-en">The reassurance I'd offer anyone in these functions: agents don't replace the judgment that makes you good at this. The instinct for what smells wrong, the read on which vendor answer is evasive, the call on whether to hold a payment — those stay yours. What changes is that you're no longer the one who has to be awake at 2 a.m. to catch it. The watching scales; the deciding stays human.</p>
+<p class="lang-id">Ketenangan yang mau saya kasih ke siapa pun di fungsi ini: agent nggak menggantikan judgment yang bikin kamu jago di kerjaan ini. Insting soal apa yang terasa nggak beres, pembacaan atas jawaban vendor mana yang mengelak, keputusan buat menahan pembayaran atau nggak — itu semua tetap punyamu. Yang berubah, kamu bukan lagi orang yang harus terjaga jam 2 pagi buat menangkapnya. Pemantauannya yang bisa di-scale; keputusannya tetap di tangan manusia.</p>
+    <div class="nudge lang-en"><span class="nudge-k">Your next step:</span> Think of one thing in your area you wish someone were watching around the clock — a payment pattern, a limit, a policy breach. Reply with it; these "always-on watcher" jobs are often the easiest, safest place to let an agent prove itself.</div>
+    <div class="nudge lang-id"><span class="nudge-k">Langkah berikutnya:</span> Pikirkan satu hal di area kamu yang kamu harap ada yang memantaunya 24 jam — pola pembayaran, sebuah limit, atau pelanggaran kebijakan. Balas dengan itu; pekerjaan "always-on watcher" seperti ini seringnya jadi tempat paling mudah dan paling aman buat agent membuktikan diri.</div>
+    <div class="sources">
+      <h4 class="lang-en">Sources</h4><h4 class="lang-id">Sumber</h4>
+      <ul class="lang-en"><li>accelirate.com — ~88% of orgs had an AI-related security incident; ~22% treat agents as identity-bearing.</li><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li></ul>
+      <ul class="lang-id"><li>accelirate.com — ~88% organisasi pernah kena insiden keamanan terkait AI; ~22% memperlakukan agent sebagai identity-bearing.</li><li>kore.ai; Generative, Inc. (2026) — "chatbot menjawab; agent bertindak."</li></ul>
+    </div>
     <div class="alt-links">
-      <h4>Other versions of this issue</h4>
-      <p>
-        
-        <a href="issue-6-b.html">Data / ROI-led (B) →</a> &nbsp;·&nbsp; 
+      <h4 class="lang-en">Other versions of this issue</h4>
+      <h4 class="lang-id">Versi lain edisi ini</h4>
+      <p class="lang-en">
+
+        <a href="issue-6-b.html">Data / ROI-led (B) →</a> &nbsp;·&nbsp;
         <a href="../issues/issue-6.html">Flagship (F) →</a>
+      </p>
+      <p class="lang-id">
+
+        <a href="issue-6-b.html">Data / ROI (B) →</a> &nbsp;·&nbsp;
+        <a href="../issues/issue-6.html">Andalan (F) →</a>
       </p>
     </div>
   </div>
 </article>
 <footer class="site-foot">
   <div class="wrap">
-    <p><strong>Finance Forward</strong> — an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</p>
-    <p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
-    <p class="muted small">Issues 1–6 published · Issues 7–15 in progress. Educational internal content; statistics cited per each issue.</p>
+    <p><strong>Finance Forward</strong> <span class="lang-en">— an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</span><span class="lang-id">— surat internal untuk tim Finance &amp; Revenue-Cycle Siloam Hospitals.</span></p>
+    <p class="muted lang-en">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+    <p class="muted lang-id">Chatbot itu menjawab; agent itu bertindak — dan keputusan akhir tetap di tangan manusia.</p>
+    <p class="muted small lang-en">Issues 1–12 published · Issues 13–15 in progress. Educational internal content; statistics cited per each issue.</p>
+    <p class="muted small lang-id">Edisi 1–12 sudah terbit · Edisi 13–15 masih digarap. Konten edukasi internal; statistik dikutip di tiap edisi.</p>
   </div>
 </footer>
+<script src="../assets/lang.js" defer></script>
 </body>
 </html>
