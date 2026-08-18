@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{if(localStorage.getItem('ff_lang')==='id')document.documentElement.classList.add('show-id')}catch(e){}</script>
 <title>Issue 1: Chatbot vs. Agent — Finance Forward</title>
 <meta name="description" content="The one-line difference behind agentic AI — told through a Siloam denial, backed by the numbers, with how we'd actually run it.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,46 +13,79 @@
 </head>
 <body class="reading">
 
-<nav class="topnav"><div class="wrap"><a href="../index.html">← Finance Forward</a><span class="crumb">Foundations · Issue 01</span></div></nav>
+<nav class="topnav"><div class="wrap"><a href="../index.html">← Finance Forward</a>
+  <div class="nav-right">
+    <span class="crumb"><span class="lang-en">Foundations · Issue 01</span><span class="lang-id">Dasar-Dasar · Edisi 01</span></span>
+    <div class="lang-toggle"><button data-lang-btn="en" class="active" aria-pressed="true">EN</button><button data-lang-btn="id" aria-pressed="false">ID</button></div>
+  </div>
+</div></nav>
 <article class="article accent-teal">
   <div class="wrap narrow">
-    <span class="eyebrow">Understanding agents · Flagship (recommended)</span>
-    <h1>Issue 1 — Chatbot vs. Agent: what "agentic" really means</h1>
+    <span class="eyebrow"><span class="lang-en">Understanding agents · Flagship (recommended)</span><span class="lang-id">Memahami agent · Andalan (rekomendasi)</span></span>
+    <h1 class="lang-en">Issue 1 — Chatbot vs. Agent: what "agentic" really means</h1>
+    <h1 class="lang-id">Edisi 1 — Chatbot vs. Agent: apa arti "agentic" sebenarnya</h1>
     <div class="subjectbar">
-      <p class="subject"><span>Subject</span> A chatbot answers. An agent acts. Here's why that changes our work.</p>
-      <p class="preview">The one-line difference behind agentic AI — told through a Siloam denial, backed by the numbers, with how we'd actually run it.</p>
+      <p class="subject lang-en"><span>Subject</span> A chatbot answers. An agent acts. Here's why that changes our work.</p>
+      <p class="subject lang-id"><span>Subjek</span> Chatbot menjawab. Agent bertindak. Ini alasan kenapa itu mengubah cara kita kerja.</p>
+      <p class="preview lang-en">The one-line difference behind agentic AI — told through a Siloam denial, backed by the numbers, with how we'd actually run it.</p>
+      <p class="preview lang-id">Perbedaan satu kalimat di balik agentic AI — diceritakan lewat sebuah denial di Siloam, didukung angka-angka, plus cara kita bakal benar-benar menjalankannya.</p>
     </div>
-    <p>Ratna in our Lippo Village billing office typed a familiar question into a chatbot last week: "What's the denial reason on this account?" It answered instantly — reason code, plain English, a policy link. Then she did what she always does: opened the payer portal, checked status, pulled the record, drafted the appeal, resubmitted. The tool answered; Ratna did the work. The next day she gave an agentic tool a goal instead of a question — "work this denied claim toward resubmission" — and it checked the live status, gathered the documentation, drafted the appeal, and handed her the packet to approve. Same starting point, completely different kind of help.</p>
+    <p class="lang-en">Ratna in our Lippo Village billing office typed a familiar question into a chatbot last week: "What's the denial reason on this account?" It answered instantly — reason code, plain English, a policy link. Then she did what she always does: opened the payer portal, checked status, pulled the record, drafted the appeal, resubmitted. The tool answered; Ratna did the work. The next day she gave an agentic tool a goal instead of a question — "work this denied claim toward resubmission" — and it checked the live status, gathered the documentation, drafted the appeal, and handed her the packet to approve. Same starting point, completely different kind of help.</p>
+    <p class="lang-id">Ratna di kantor billing Lippo Village kita mengetikkan pertanyaan yang sudah biasa ke chatbot minggu lalu: "Apa alasan denial di akun ini?" Chatbot-nya langsung jawab — kode alasan, bahasa yang gampang dimengerti, link ke kebijakannya. Lalu Ratna melakukan hal yang biasa dia lakukan: buka payer portal, cek status, ambil rekamnya, susun banding, kirim ulang. Tool-nya menjawab; Ratna yang mengerjakan. Besoknya dia kasih tool agentic sebuah tujuan, bukan pertanyaan — "kerjakan klaim yang di-denial ini sampai siap dikirim ulang" — dan tool itu cek status live-nya, kumpulkan dokumentasinya, susun bandingnya, lalu serahkan paketnya ke Ratna buat disetujui. Titik awalnya sama, tapi jenis bantuannya beda banget.</p>
 <figure class="fig">
   <img src="../assets/img/i1_chatbot_vs_agent.svg" alt="Figure 1.1 — The single distinction that defines everything that follows." loading="lazy">
-  <figcaption>Figure 1.1 — The single distinction that defines everything that follows.<span class="src">Data source: Concept per kore.ai and Generative, Inc. (2026); illustration original.</span></figcaption>
+  <figcaption>
+    <span class="lang-en">Figure 1.1 — The single distinction that defines everything that follows.</span>
+    <span class="lang-id">Gambar 1.1 — Satu perbedaan yang mendasari semua hal berikutnya.</span>
+    <span class="src lang-en">Data source: Concept per kore.ai and Generative, Inc. (2026); illustration original.</span>
+    <span class="src lang-id">Sumber data: Konsep menurut kore.ai dan Generative, Inc. (2026); ilustrasi orisinal.</span>
+  </figcaption>
 </figure>
-<p><strong>That's the whole series in one line: </strong>a chatbot answers; an agent acts. A chatbot is a brilliant reference desk. An agent is a diligent junior colleague who can pick up a task, use your systems, and carry it most of the way — while you set the goal and keep the final say.</p>
-<p>The reason this matters to finance leadership isn't philosophical, it's on the balance sheet. Gartner projects about 40% of enterprise apps will embed task-specific agents in 2026, up from under 5% in 2025 (via Deloitte). Because an agent produces outcomes rather than words, that capability shows up in the numbers we actually manage — cycle time, cost per task, throughput — not just in a happier help desk. Structured, auditable, high-volume work is exactly agents' strong suit, which is why revenue-cycle queues like Ratna's are such natural first ground.</p>
+<p class="lang-en"><strong>That's the whole series in one line: </strong>a chatbot answers; an agent acts. A chatbot is a brilliant reference desk. An agent is a diligent junior colleague who can pick up a task, use your systems, and carry it most of the way — while you set the goal and keep the final say.</p>
+<p class="lang-id"><strong>Itulah seluruh seri ini dalam satu kalimat: </strong>chatbot menjawab; agent bertindak. Chatbot itu meja referensi yang pintar. Agent itu lebih kayak kolega junior yang rajin, yang bisa ambil sebuah tugas, pakai sistem kamu, dan menjalankannya sampai hampir selesai — sementara kamu yang menentukan tujuan dan yang punya keputusan terakhir.</p>
+<p class="lang-en">The reason this matters to finance leadership isn't philosophical, it's on the balance sheet. Gartner projects about 40% of enterprise apps will embed task-specific agents in 2026, up from under 5% in 2025 (via Deloitte). Because an agent produces outcomes rather than words, that capability shows up in the numbers we actually manage — cycle time, cost per task, throughput — not just in a happier help desk. Structured, auditable, high-volume work is exactly agents' strong suit, which is why revenue-cycle queues like Ratna's are such natural first ground.</p>
+<p class="lang-id">Alasan ini penting buat leadership finance bukan soal filosofi, tapi soal balance sheet. Gartner memproyeksikan sekitar 40% aplikasi enterprise bakal menyematkan agent task-specific di 2026, naik dari kurang dari 5% di 2025 (via Deloitte). Karena agent menghasilkan outcome, bukan sekadar kata-kata, kapabilitas itu kelihatan di angka-angka yang benar-benar kita kelola — cycle time, cost per task, throughput — bukan cuma di help desk yang lebih happy. Pekerjaan yang terstruktur, bisa diaudit, dan volumenya tinggi itu justru keahlian utama agent, makanya antrean revenue-cycle seperti punya Ratna jadi lahan pertama yang natural banget.</p>
 <figure class="fig">
   <img src="../assets/img/i1_autonomy_ladder.svg" alt="Figure 1.2 — Autonomy is a dial you set per workflow, not an on/off switch." loading="lazy">
-  <figcaption>Figure 1.2 — Autonomy is a dial you set per workflow, not an on/off switch.<span class="src">Data source: Original schematic (Finance Forward).</span></figcaption>
+  <figcaption>
+    <span class="lang-en">Figure 1.2 — Autonomy is a dial you set per workflow, not an on/off switch.</span>
+    <span class="lang-id">Gambar 1.2 — Otonomi itu dial yang kamu atur per alur kerja, bukan saklar on/off.</span>
+    <span class="src lang-en">Data source: Original schematic (Finance Forward).</span>
+    <span class="src lang-id">Sumber data: Skema orisinal (Finance Forward).</span>
+  </figcaption>
 </figure>
-<p>Here's how we'd actually run it, so "it acts" never means "it's loose." Three things travel together on every workflow. One, autonomy is a dial set per task (Figure 1.2): suggest, act-with-review, or act-with-oversight — you pick the rung. Two, a human-in-the-loop gate stays in place: the agent prepares and proposes, a named person approves, nothing consequential goes out unreviewed. Three, the agent works under a scoped "agent identity" — its own credentials and a full log — so every action is auditable like any system access. Start one workflow at act-with-review, watch the log for two weeks, then decide whether to widen the dial.</p>
-<p>And notice what stays put. Ratna is still the professional of record. Her judgment about which denials are worth fighting, and how to word the hard ones, is precisely what the agent defers to. The grind moved off her plate; the expertise stayed on it. That's the trade at the heart of everything ahead — and it's a good one.</p>
-<div class="nudge"><span class="nudge-k">Your next step:</span> Pick one repetitive, rule-bound task you'd hand to a careful junior colleague and reply with it. We'll use real Siloam examples to shape where a first pilot could earn its keep — and in Issue 2, I'll show you why finance is already leading this shift.</div>
-    <div class="sources"><h4>Sources</h4><ul><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li><li>Gartner via Deloitte — ~40% of enterprise apps embed agents in 2026 vs. &lt;5% in 2025.</li></ul></div>
+<p class="lang-en">Here's how we'd actually run it, so "it acts" never means "it's loose." Three things travel together on every workflow. One, autonomy is a dial set per task (Figure 1.2): suggest, act-with-review, or act-with-oversight — you pick the rung. Two, a human-in-the-loop gate stays in place: the agent prepares and proposes, a named person approves, nothing consequential goes out unreviewed. Three, the agent works under a scoped "agent identity" — its own credentials and a full log — so every action is auditable like any system access. Start one workflow at act-with-review, watch the log for two weeks, then decide whether to widen the dial.</p>
+<p class="lang-id">Ini cara kita bakal benar-benar menjalankannya, supaya "dia bertindak" nggak pernah berarti "dia lepas kendali." Tiga hal ini selalu jalan bareng di tiap alur kerja. Satu, otonomi itu dial yang diatur per tugas (Gambar 1.2): suggest, act-with-review, atau act-with-oversight — kamu yang pilih levelnya. Dua, gerbang human-in-the-loop tetap ada: agent menyiapkan dan mengusulkan, satu orang yang ditunjuk menyetujui, nggak ada yang konsekuensinya besar keluar tanpa direview. Tiga, agent bekerja di bawah "agent identity" yang scoped — kredensialnya sendiri dan log yang lengkap — supaya tiap tindakan bisa diaudit kayak akses sistem lainnya. Mulai satu alur kerja di act-with-review, pantau log-nya selama dua minggu, baru putuskan mau perlebar dial-nya atau nggak.</p>
+<p class="lang-en">And notice what stays put. Ratna is still the professional of record. Her judgment about which denials are worth fighting, and how to word the hard ones, is precisely what the agent defers to. The grind moved off her plate; the expertise stayed on it. That's the trade at the heart of everything ahead — and it's a good one.</p>
+<p class="lang-id">Dan perhatikan apa yang nggak berubah. Ratna tetap jadi profesional yang bertanggung jawab. Penilaiannya soal denial mana yang layak diperjuangkan, dan cara menulis yang sulit-sulit, itu justru yang agent-nya andalkan dari dia. Kerja beratnya pindah dari piringnya; keahliannya tetap di situ. Itulah pertukaran di jantung semua yang akan datang — dan itu pertukaran yang bagus.</p>
+<div class="nudge lang-en"><span class="nudge-k">Your next step:</span> Pick one repetitive, rule-bound task you'd hand to a careful junior colleague and reply with it. We'll use real Siloam examples to shape where a first pilot could earn its keep — and in Issue 2, I'll show you why finance is already leading this shift.</div>
+<div class="nudge lang-id"><span class="nudge-k">Langkah berikutnya:</span> Pilih satu tugas yang repetitif dan berbasis aturan yang mau kamu serahkan ke kolega junior yang teliti, dan balas dengan itu. Kita bakal pakai contoh nyata dari Siloam buat membentuk di mana pilot pertama bisa membuktikan nilainya — dan di Edisi 2, aku bakal tunjukkan kenapa finance sudah memimpin pergeseran ini.</div>
+    <div class="sources">
+      <h4 class="lang-en">Sources</h4><h4 class="lang-id">Sumber</h4>
+      <ul class="lang-en"><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li><li>Gartner via Deloitte — ~40% of enterprise apps embed agents in 2026 vs. &lt;5% in 2025.</li></ul>
+      <ul class="lang-id"><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li><li>Gartner via Deloitte — ~40% aplikasi enterprise menyematkan agent di 2026 vs. &lt;5% di 2025.</li></ul>
+    </div>
     <div class="alt-links">
-      <h4>Other versions of this issue</h4>
-      <p>Same idea, different angle. <a href="../archive/issue-1-a.html">Story-led (A) →</a> &nbsp;·&nbsp; <a href="../archive/issue-1-b.html">Data / ROI-led (B) →</a></p>
+      <h4 class="lang-en">Other versions of this issue</h4>
+      <h4 class="lang-id">Versi lain edisi ini</h4>
+      <p class="lang-en">Same idea, different angle. <a href="../archive/issue-1-a.html">Story-led (A) →</a> &nbsp;·&nbsp; <a href="../archive/issue-1-b.html">Data / ROI-led (B) →</a></p>
+      <p class="lang-id">Ide yang sama, sudut pandang beda. <a href="../archive/issue-1-a.html">Gaya Cerita (A) →</a> &nbsp;·&nbsp; <a href="../archive/issue-1-b.html">Data / ROI (B) →</a></p>
     </div>
     <div class="pager">
       <span></span>
-      <a href="issue-2.html">Issue 02 →</a>
+      <a href="issue-2.html"><span class="lang-en">Issue 02 →</span><span class="lang-id">Edisi 02 →</span></a>
     </div>
   </div>
 </article>
 <footer class="site-foot">
   <div class="wrap">
-    <p><strong>Finance Forward</strong> — an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</p>
-    <p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
-    <p class="muted small">Issues 1–6 published · Issues 7–15 in progress. Educational internal content; statistics cited per each issue.</p>
+    <p><strong>Finance Forward</strong> <span class="lang-en">— an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</span><span class="lang-id">— surat internal untuk tim Finance &amp; Revenue-Cycle Siloam Hospitals.</span></p>
+    <p class="muted lang-en">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+    <p class="muted lang-id">Chatbot itu menjawab; agent itu bertindak — dan keputusan akhir tetap di tangan manusia.</p>
+    <p class="muted small lang-en">Issues 1–12 published · Issues 13–15 in progress. Educational internal content; statistics cited per each issue.</p>
+    <p class="muted small lang-id">Edisi 1–12 sudah terbit · Edisi 13–15 masih digarap. Konten edukasi internal; statistik dikutip di tiap edisi.</p>
   </div>
 </footer>
+<script src="../assets/lang.js" defer></script>
 </body>
 </html>

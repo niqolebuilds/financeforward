@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{if(localStorage.getItem('ff_lang')==='id')document.documentElement.classList.add('show-id')}catch(e){}</script>
 <title>Issue 5: FP&amp;A &amp; the Month-End Close — Finance Forward</title>
 <meta name="description" content="An FP&amp;A team's month-end, the days-to-close math, and how the review gate keeps sign-off human.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,47 +13,81 @@
 </head>
 <body class="reading">
 
-<nav class="topnav"><div class="wrap"><a href="../index.html">← Finance Forward</a><span class="crumb">Proof at Home · Issue 05</span></div></nav>
+<nav class="topnav"><div class="wrap"><a href="../index.html">← Finance Forward</a>
+  <div class="nav-right">
+    <span class="crumb"><span class="lang-en">Proof at Home · Issue 05</span><span class="lang-id">Bukti di Lapangan Sendiri · Edisi 05</span></span>
+    <div class="lang-toggle"><button data-lang-btn="en" class="active" aria-pressed="true">EN</button><button data-lang-btn="id" aria-pressed="false">ID</button></div>
+  </div>
+</div></nav>
 <article class="article accent-navy">
   <div class="wrap narrow">
-    <span class="eyebrow">Agents on our own turf · Flagship (recommended)</span>
-    <h1>Issue 5 — Agents in FP&amp;A and the month-end close</h1>
+    <span class="eyebrow"><span class="lang-en">Agents on our own turf · Flagship (recommended)</span><span class="lang-id">Agent di lapangan kita sendiri · Andalan (rekomendasi)</span></span>
+    <h1 class="lang-en">Issue 5 — Agents in FP&amp;A and the month-end close</h1>
+    <h1 class="lang-id">Edisi 5 — Agent di FP&amp;A dan proses month-end close</h1>
     <div class="subjectbar">
-      <p class="subject"><span>Subject</span> A faster, calmer close — and analysts who finally get to analyze</p>
-      <p class="preview">An FP&amp;A team's month-end, the days-to-close math, and how the review gate keeps sign-off human.</p>
+      <p class="subject lang-en"><span>Subject</span> A faster, calmer close — and analysts who finally get to analyze</p>
+      <p class="subject lang-id"><span>Subjek</span> Close yang lebih cepat dan lebih tenang — dan analis yang akhirnya bisa benar-benar menganalisis</p>
+      <p class="preview lang-en">An FP&amp;A team's month-end, the days-to-close math, and how the review gate keeps sign-off human.</p>
+      <p class="preview lang-id">Month-end tim FP&amp;A, hitung-hitungan days-to-close, dan cara review gate menjaga sign-off tetap di tangan manusia.</p>
     </div>
-    <p>Adi leads FP&amp;A at one of our entities, and the first week of every month always belonged to the close: pull data from three systems, reconcile, chase what doesn't tie, book adjustments — and only around day eight, often over a weekend, actually analyze the numbers. This month an agent took the repetitive middle: scheduled data pulls, first-pass reconciliations, drafted routine journal entries, and a clean list of exceptions. The team started from a drafted close, not raw extracts. Day eight became roughly day four.</p>
+    <p class="lang-en">Adi leads FP&amp;A at one of our entities, and the first week of every month always belonged to the close: pull data from three systems, reconcile, chase what doesn't tie, book adjustments — and only around day eight, often over a weekend, actually analyze the numbers. This month an agent took the repetitive middle: scheduled data pulls, first-pass reconciliations, drafted routine journal entries, and a clean list of exceptions. The team started from a drafted close, not raw extracts. Day eight became roughly day four.</p>
+    <p class="lang-id">Adi memimpin FP&amp;A di salah satu entitas kita, dan minggu pertama tiap bulan selalu habis buat close: tarik data dari tiga sistem, rekonsiliasi, kejar-kejaran sama angka yang nggak cocok, catat penyesuaian — dan baru sekitar hari kedelapan, sering di akhir pekan, benar-benar menganalisis angkanya. Bulan ini, agent yang ambil alih bagian tengah yang repetitif: menarik data terjadwal, rekonsiliasi tahap pertama, menyiapkan draf jurnal rutin, dan daftar exception yang rapi. Tim mulai dari close yang sudah didraf, bukan dari data mentah. Hari kedelapan jadi kira-kira hari keempat.</p>
 <figure class="fig">
   <img src="../assets/img/i5_close.svg" alt="Figure 5.1 — Agents compress the repetitive middle of the close; humans keep review, judgment, and sign-off." loading="lazy">
-  <figcaption>Figure 5.1 — Agents compress the repetitive middle of the close; humans keep review, judgment, and sign-off.<span class="src">Data source: Original schematic (Finance Forward); illustrative close timeline.</span></figcaption>
+  <figcaption>
+    <span class="lang-en">Figure 5.1 — Agents compress the repetitive middle of the close; humans keep review, judgment, and sign-off.</span>
+    <span class="lang-id">Gambar 5.1 — Agent mempersingkat bagian tengah yang repetitif dari close; manusia tetap pegang review, judgment, dan sign-off.</span>
+    <span class="src lang-en">Data source: Original schematic (Finance Forward); illustrative close timeline.</span>
+    <span class="src lang-id">Sumber data: Skema orisinal (Finance Forward); linimasa close bersifat ilustratif.</span>
+  </figcaption>
 </figure>
-<p><strong>It's the same pattern we keep seeing: </strong>a chatbot answers; an agent acts. A chatbot explains a variance on request; the agent assembled the reconciliation and drafted the entries, then stopped for review.</p>
-<p>The leadership case is compression (Figure 5.2). Moving the repetitive middle to an agent commonly pulls the close from about eight business days toward four, and inverts the analyst's day from roughly two-thirds prep / one-third analysis to the reverse. That's four-plus days a month — around fifty a year — redirected from assembly to forecasting, with results explained to leadership a week earlier, every month. The close is defined, recurring, and auditable, which is exactly why an agent can traverse it and a human can verify it fast.</p>
+<p class="lang-en"><strong>It's the same pattern we keep seeing: </strong>a chatbot answers; an agent acts. A chatbot explains a variance on request; the agent assembled the reconciliation and drafted the entries, then stopped for review.</p>
+<p class="lang-id"><strong>Ini pola yang sama yang terus kita lihat: </strong>chatbot menjawab; agent bertindak. Chatbot menjelaskan variance kalau diminta; agent yang menyusun rekonsiliasi dan menyiapkan draf entrinya, lalu berhenti untuk direview.</p>
+<p class="lang-en">The leadership case is compression (Figure 5.2). Moving the repetitive middle to an agent commonly pulls the close from about eight business days toward four, and inverts the analyst's day from roughly two-thirds prep / one-third analysis to the reverse. That's four-plus days a month — around fifty a year — redirected from assembly to forecasting, with results explained to leadership a week earlier, every month. The close is defined, recurring, and auditable, which is exactly why an agent can traverse it and a human can verify it fast.</p>
+<p class="lang-id">Kasus buat leadership itu soal kompresi (Gambar 5.2). Memindahkan bagian tengah yang repetitif ke agent biasanya menarik close dari sekitar delapan hari kerja jadi empat, dan membalik hari kerja analis dari kira-kira dua-pertiga prep / satu-pertiga analisis jadi sebaliknya. Itu artinya empat-plus hari per bulan — sekitar lima puluh hari per tahun — yang dialihkan dari assembly ke forecasting, dengan hasil yang bisa dijelaskan ke leadership seminggu lebih awal, tiap bulan. Close-nya sendiri proses yang terdefinisi, berulang, dan bisa diaudit — itulah kenapa agent bisa menjalaninya dan manusia bisa memverifikasinya dengan cepat.</p>
 <figure class="fig">
   <img src="../assets/img/i5_reallocation.svg" alt="Figure 5.2 — The analyst's day shifts from data prep to analysis; the close gets shorter and calmer." loading="lazy">
-  <figcaption>Figure 5.2 — The analyst's day shifts from data prep to analysis; the close gets shorter and calmer.<span class="src">Data source: Original schematic (Finance Forward); illustrative reallocation and close-day figures.</span></figcaption>
+  <figcaption>
+    <span class="lang-en">Figure 5.2 — The analyst's day shifts from data prep to analysis; the close gets shorter and calmer.</span>
+    <span class="lang-id">Gambar 5.2 — Hari kerja analis bergeser dari data prep ke analisis; close jadi lebih singkat dan lebih tenang.</span>
+    <span class="src lang-en">Data source: Original schematic (Finance Forward); illustrative reallocation and close-day figures.</span>
+    <span class="src lang-id">Sumber data: Skema orisinal (Finance Forward); angka realokasi dan hari-close bersifat ilustratif.</span>
+  </figcaption>
 </figure>
-<p>Safe by construction (Figure 5.1): every drafted entry passes a human-in-the-loop gate before posting, approval and sign-off stay with the accountable humans, and the agent runs under a scoped identity with a full log — so the close is more auditable, not less. The agent assembles; the team judges and signs.</p>
-<p>How to start: instrument this month's close as a baseline — business days, analyst prep-vs-analysis hours, manual reconciliation count. Next close, automate one sub-ledger reconciliation and the routine entries, keep everything behind the review gate, and compare. Turn on the agent identity and logging from the first run. Then decide, on evidence, whether to widen to the next reconciliation.</p>
-<p>And keep the human center in view. Adi's team didn't get smaller; its month-end stopped being janitorial and started being analytical — the story behind the margin, the forecast, the department that needed a conversation. A team that isn't exhausted by day eight catches more and forecasts clearer. The grind moved; the thinking got room to breathe.</p>
-<div class="nudge"><span class="nudge-k">Your next step:</span> Pick one reconciliation or entry set to pilot next close, and reply with it plus your current days-to-close. We'll help shape a simple before/after you can take to your controller.</div>
-    <div class="sources"><h4>Sources</h4><ul><li>Commonly reported close-cycle compression ranges with agentic automation (2026, illustrative).</li><li>Human-in-the-loop / agent-identity controls per accelirate.com.</li><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li></ul></div>
+<p class="lang-en">Safe by construction (Figure 5.1): every drafted entry passes a human-in-the-loop gate before posting, approval and sign-off stay with the accountable humans, and the agent runs under a scoped identity with a full log — so the close is more auditable, not less. The agent assembles; the team judges and signs.</p>
+<p class="lang-id">Aman dari desainnya (Gambar 5.1): tiap entri yang didraf melewati human-in-the-loop gate sebelum diposting, approval dan sign-off tetap di tangan manusia yang bertanggung jawab, dan agent berjalan dengan identitas scoped serta log lengkap — jadi close-nya justru makin bisa diaudit, bukan sebaliknya. Agent yang menyusun; tim yang menilai dan menandatangani.</p>
+<p class="lang-en">How to start: instrument this month's close as a baseline — business days, analyst prep-vs-analysis hours, manual reconciliation count. Next close, automate one sub-ledger reconciliation and the routine entries, keep everything behind the review gate, and compare. Turn on the agent identity and logging from the first run. Then decide, on evidence, whether to widen to the next reconciliation.</p>
+<p class="lang-id">Cara mulainya: jadikan close bulan ini sebagai baseline — hari kerja, jam analis buat prep vs analisis, dan jumlah rekonsiliasi manual. Di close berikutnya, otomatiskan satu rekonsiliasi sub-ledger dan entri-entri rutin, tetap jaga semuanya di balik review gate, lalu bandingkan. Nyalakan identitas agent dan logging sejak run pertama. Baru putuskan, berdasarkan bukti, apakah mau diperluas ke rekonsiliasi berikutnya.</p>
+<p class="lang-en">And keep the human center in view. Adi's team didn't get smaller; its month-end stopped being janitorial and started being analytical — the story behind the margin, the forecast, the department that needed a conversation. A team that isn't exhausted by day eight catches more and forecasts clearer. The grind moved; the thinking got room to breathe.</p>
+<p class="lang-id">Dan jangan lupa sisi manusianya. Tim Adi nggak jadi lebih kecil; month-end mereka berhenti jadi kerja beres-beres dan mulai jadi kerja analitis — cerita di balik margin, forecast, departemen yang perlu diajak ngobrol. Tim yang nggak kehabisan tenaga di hari kedelapan bisa menangkap lebih banyak dan forecast lebih jernih. Kerja beratnya pindah; ruang buat berpikir jadi lebih lega.</p>
+    <div class="nudge lang-en"><span class="nudge-k">Your next step:</span> Pick one reconciliation or entry set to pilot next close, and reply with it plus your current days-to-close. We'll help shape a simple before/after you can take to your controller.</div>
+    <div class="nudge lang-id"><span class="nudge-k">Langkah berikutnya:</span> Pilih satu rekonsiliasi atau kumpulan entri buat dipilot di close berikutnya, dan balas dengan itu plus days-to-close kamu saat ini. Kita bantu susun before/after sederhana yang bisa kamu bawa ke controller kamu.</div>
+    <div class="sources">
+      <h4 class="lang-en">Sources</h4><h4 class="lang-id">Sumber</h4>
+      <ul class="lang-en"><li>Commonly reported close-cycle compression ranges with agentic automation (2026, illustrative).</li><li>Human-in-the-loop / agent-identity controls per accelirate.com.</li><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li></ul>
+      <ul class="lang-id"><li>Rentang kompresi siklus close dengan otomatisasi agentic yang umum dilaporkan (2026, ilustratif).</li><li>Kontrol human-in-the-loop / identitas agent menurut accelirate.com.</li><li>kore.ai; Generative, Inc. (2026) — "chatbot menjawab; agent bertindak."</li></ul>
+    </div>
     <div class="alt-links">
-      <h4>Other versions of this issue</h4>
-      <p>Same idea, different angle. <a href="../archive/issue-5-a.html">Story-led (A) →</a> &nbsp;·&nbsp; <a href="../archive/issue-5-b.html">Data / ROI-led (B) →</a></p>
+      <h4 class="lang-en">Other versions of this issue</h4>
+      <h4 class="lang-id">Versi lain edisi ini</h4>
+      <p class="lang-en">Same idea, different angle. <a href="../archive/issue-5-a.html">Story-led (A) →</a> &nbsp;·&nbsp; <a href="../archive/issue-5-b.html">Data / ROI-led (B) →</a></p>
+      <p class="lang-id">Ide yang sama, sudut pandang beda. <a href="../archive/issue-5-a.html">Gaya Cerita (A) →</a> &nbsp;·&nbsp; <a href="../archive/issue-5-b.html">Data / ROI (B) →</a></p>
     </div>
     <div class="pager">
-      <a href="issue-4.html">← Issue 04</a>
-      <a href="issue-6.html">Issue 06 →</a>
+      <a href="issue-4.html"><span class="lang-en">← Issue 04</span><span class="lang-id">← Edisi 04</span></a>
+      <a href="issue-6.html"><span class="lang-en">Issue 06 →</span><span class="lang-id">Edisi 06 →</span></a>
     </div>
   </div>
 </article>
 <footer class="site-foot">
   <div class="wrap">
-    <p><strong>Finance Forward</strong> — an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</p>
-    <p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
-    <p class="muted small">Issues 1–6 published · Issues 7–15 in progress. Educational internal content; statistics cited per each issue.</p>
+    <p><strong>Finance Forward</strong> <span class="lang-en">— an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</span><span class="lang-id">— surat internal untuk tim Finance &amp; Revenue-Cycle Siloam Hospitals.</span></p>
+    <p class="muted lang-en">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+    <p class="muted lang-id">Chatbot itu menjawab; agent itu bertindak — dan keputusan akhir tetap di tangan manusia.</p>
+    <p class="muted small lang-en">Issues 1–12 published · Issues 13–15 in progress. Educational internal content; statistics cited per each issue.</p>
+    <p class="muted small lang-id">Edisi 1–12 sudah terbit · Edisi 13–15 masih digarap. Konten edukasi internal; statistik dikutip di tiap edisi.</p>
   </div>
 </footer>
+<script src="../assets/lang.js" defer></script>
 </body>
 </html>

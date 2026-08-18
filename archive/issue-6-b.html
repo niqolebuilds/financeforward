@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{if(localStorage.getItem('ff_lang')==='id')document.documentElement.classList.add('show-id')}catch(e){}</script>
 <title>Issue 6 · Data / ROI-led — Finance Forward</title>
 <meta name="description" content="A held payment at 2 a.m. shows the upside; one statistic shows the homework that makes it safe.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,46 +13,83 @@
 </head>
 <body class="reading">
 
-<nav class="topnav"><div class="wrap"><a href="../archive/index.html">← Archive</a><span class="crumb">Issue 06 · Data / ROI-led</span></div></nav>
+<nav class="topnav"><div class="wrap"><a href="../archive/index.html">← Archive</a>
+  <div class="nav-right">
+    <span class="crumb"><span class="lang-en">Issue 06 · Data / ROI-led</span><span class="lang-id">Edisi 06 · Data / ROI</span></span>
+    <div class="lang-toggle"><button data-lang-btn="en" class="active" aria-pressed="true">EN</button><button data-lang-btn="id" aria-pressed="false">ID</button></div>
+  </div>
+</div></nav>
 <article class="article alt accent-navy">
   <div class="wrap narrow">
-    <span class="eyebrow">Agents on our own turf · Data / ROI-led (Version B)</span>
-    <h1>Issue 6 — Agents in treasury, fraud, and compliance</h1>
+    <span class="eyebrow"><span class="lang-en">Agents on our own turf · Data / ROI-led (Version B)</span><span class="lang-id">Agent di lapangan kita sendiri · Data / ROI (Versi B)</span></span>
+    <h1 class="lang-en">Issue 6 — Agents in treasury, fraud, and compliance</h1>
+    <h1 class="lang-id">Edisi 6 — Agent di treasury, fraud, dan compliance</h1>
     <div class="subjectbar">
-      <p class="subject"><span>Subject</span> 88% had an AI security incident. Only 22% control for it. Mind the gap.</p>
-      <p class="preview">A held payment at 2 a.m. shows the upside; one statistic shows the homework that makes it safe.</p>
+      <p class="subject lang-en"><span>Subject</span> 88% had an AI security incident. Only 22% control for it. Mind the gap.</p>
+      <p class="subject lang-id"><span>Subjek</span> 88% pernah kena insiden keamanan AI. Cuma 22% yang punya kontrolnya. Waspadai celahnya.</p>
+      <p class="preview lang-en">A held payment at 2 a.m. shows the upside; one statistic shows the homework that makes it safe.</p>
+      <p class="preview lang-id">Pembayaran yang ditahan jam 2 pagi menunjukkan upside-nya; satu statistik menunjukkan PR yang bikin ini aman.</p>
     </div>
-    <p><strong>A treasury analyst got an overnight fraud flag with the reasoning already attached — </strong>the upside is obvious; the number that should shape how we deploy is less comforting.</p>
+    <p class="lang-en"><strong>A treasury analyst got an overnight fraud flag with the reasoning already attached — </strong>the upside is obvious; the number that should shape how we deploy is less comforting.</p>
+    <p class="lang-id"><strong>Seorang analis treasury dapat flag fraud semalaman lengkap dengan alasannya — </strong>upside-nya jelas kelihatan; tapi angka yang seharusnya membentuk cara kita deploy nggak seaman itu.</p>
 <figure class="fig">
   <img src="../assets/img/i6_domains.svg" alt="Figure 6.1 — Three back-office fronts where agents earn their keep — each ending at a human who approves the call." loading="lazy">
-  <figcaption>Figure 6.1 — Three back-office fronts where agents earn their keep — each ending at a human who approves the call.<span class="src">Data source: Original schematic (Finance Forward).</span></figcaption>
+  <figcaption>
+    <span class="lang-en">Figure 6.1 — Three back-office fronts where agents earn their keep — each ending at a human who approves the call.</span>
+    <span class="lang-id">Gambar 6.1 — Tiga lini back-office tempat agent membuktikan diri — semuanya berakhir di manusia yang menyetujui keputusan.</span>
+    <span class="src lang-en">Data source: Original schematic (Finance Forward).</span>
+    <span class="src lang-id">Sumber data: Skema orisinal (Finance Forward).</span>
+  </figcaption>
 </figure>
-<p>Here's the stat every leader scaling agents in treasury, fraud, or compliance needs on the wall: about 88% of organizations have already experienced an AI-related security incident, yet only ~22% treat their agents as identity-bearing with proper access controls (accelirate.com; Figure 6.2). The capability is spreading faster than the controls around it — and in functions that move money and answer to regulators, that gap is the whole risk.</p>
-<p>The upside is real and worth naming first. Across three domains (Figure 6.1), agents do genuine work: in treasury, continuous balance sweeps, cash forecasting, and idle-fund flags; in fraud, always-on transaction monitoring, anomaly scoring, and freeze-and-alert; in compliance, vendor screening, policy checks, and audit-evidence assembly. Because a chatbot answers while an agent acts, these show up as faster detection, fewer missed anomalies, and audit packs that assemble themselves — measurable in detection latency and analyst hours, not survey scores.</p>
+<p class="lang-en">Here's the stat every leader scaling agents in treasury, fraud, or compliance needs on the wall: about 88% of organizations have already experienced an AI-related security incident, yet only ~22% treat their agents as identity-bearing with proper access controls (accelirate.com; Figure 6.2). The capability is spreading faster than the controls around it — and in functions that move money and answer to regulators, that gap is the whole risk.</p>
+<p class="lang-id">Ini statistik yang perlu ditempel di dinding tiap leader yang mau scale-up agent di treasury, fraud, atau compliance: sekitar 88% organisasi sudah pernah mengalami insiden keamanan terkait AI, sementara cuma ~22% yang memperlakukan agent-nya sebagai identity-bearing dengan kontrol akses yang layak (accelirate.com; Gambar 6.2). Kemampuannya menyebar lebih cepat daripada kontrol di sekitarnya — dan di fungsi yang memindahkan uang dan menjawab ke regulator, celah itu adalah keseluruhan risikonya.</p>
+<p class="lang-en">The upside is real and worth naming first. Across three domains (Figure 6.1), agents do genuine work: in treasury, continuous balance sweeps, cash forecasting, and idle-fund flags; in fraud, always-on transaction monitoring, anomaly scoring, and freeze-and-alert; in compliance, vendor screening, policy checks, and audit-evidence assembly. Because a chatbot answers while an agent acts, these show up as faster detection, fewer missed anomalies, and audit packs that assemble themselves — measurable in detection latency and analyst hours, not survey scores.</p>
+<p class="lang-id">Upside-nya nyata dan perlu disebut duluan. Di tiga domain (Gambar 6.1), agent mengerjakan kerja beneran: di treasury, sweep saldo terus-menerus, cash forecasting, dan tanda dana yang menganggur; di fraud, pemantauan transaksi 24 jam, penilaian anomali, dan freeze-and-alert; di compliance, screening vendor, cek kebijakan, dan penyusunan bukti audit. Karena chatbot menjawab sementara agent bertindak, semua ini kelihatan sebagai deteksi yang lebih cepat, anomali yang lebih jarang terlewat, dan audit pack yang menyusun dirinya sendiri — terukur dalam detection latency dan jam kerja analis, bukan skor survei.</p>
 <figure class="fig">
   <img src="../assets/img/i6_security_gap.svg" alt="Figure 6.2 — The gap agent identity closes: most orgs have had an AI security incident; few give agents proper identity controls." loading="lazy">
-  <figcaption>Figure 6.2 — The gap agent identity closes: most orgs have had an AI security incident; few give agents proper identity controls.<span class="src">Data source: accelirate.com — ~88% had an AI-related security incident; ~22% treat agents as identity-bearing.</span></figcaption>
+  <figcaption>
+    <span class="lang-en">Figure 6.2 — The gap agent identity closes: most orgs have had an AI security incident; few give agents proper identity controls.</span>
+    <span class="lang-id">Gambar 6.2 — Celah yang ditutup identitas agent: kebanyakan organisasi pernah kena insiden keamanan AI; sedikit yang memberi agent kontrol identitas yang layak.</span>
+    <span class="src lang-en">Data source: accelirate.com — ~88% had an AI-related security incident; ~22% treat agents as identity-bearing.</span>
+    <span class="src lang-id">Sumber data: accelirate.com — ~88% pernah kena insiden keamanan terkait AI; ~22% memperlakukan agent sebagai identity-bearing.</span>
+  </figcaption>
 </figure>
-<p>But the 88/22 gap dictates the deployment order: identity first, autonomy second. Every agent should carry its own scoped credentials (least-privilege access), a complete and immutable action log, and — critically in these domains — no unilateral authority over money movement or regulatory decisions. The agent watches, scores, and assembles; a human approves the release, the block, or the filing. That human-in-the-loop gate isn't friction; in a regulated function it's the control that makes the whole thing deployable.</p>
-<p>For the analytically minded, the ROI has two sides that must be weighed together. Upside: reduced detection latency, broader coverage (an agent watches 100% of transactions, not a sample), and lower manual audit-prep cost. Downside if you skip the identity work: you join the 88% — and in treasury or compliance, a single incident can dwarf the efficiency gains. The expected-value case is strongly positive only when the identity controls are in place before you widen autonomy.</p>
-<p>Recommended sequence: (1) stand up agent identity — scoped credentials plus logging — before any live deployment; (2) start in "watch and alert" mode, where the agent flags but never acts on money movement; (3) measure detection latency, coverage, and false-positive rate against baseline; (4) widen autonomy only where the log proves reliability, always keeping the human approval gate on consequential actions. Do the homework first, and this is one of the safest, highest-leverage places agents earn their keep. Forward this to whoever owns treasury or compliance risk.</p>
-    <div class="sources"><h4>Sources</h4><ul><li>accelirate.com — ~88% of orgs had an AI-related security incident; ~22% treat agents as identity-bearing with access controls.</li><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li></ul></div>
+<p class="lang-en">But the 88/22 gap dictates the deployment order: identity first, autonomy second. Every agent should carry its own scoped credentials (least-privilege access), a complete and immutable action log, and — critically in these domains — no unilateral authority over money movement or regulatory decisions. The agent watches, scores, and assembles; a human approves the release, the block, or the filing. That human-in-the-loop gate isn't friction; in a regulated function it's the control that makes the whole thing deployable.</p>
+<p class="lang-id">Tapi celah 88/22 itu menentukan urutan deployment: identitas dulu, otonomi belakangan. Tiap agent sebaiknya punya kredensial scoped miliknya sendiri (akses least-privilege), action log yang lengkap dan nggak bisa diubah, dan — yang krusial di domain ini — nggak punya otoritas sepihak atas pergerakan uang atau keputusan regulasi. Agent yang memantau, menilai, dan menyusun; manusia yang menyetujui pelepasan, blokir, atau filing-nya. Human-in-the-loop gate itu bukan friksi; di fungsi yang diregulasi, itu justru kontrol yang bikin semuanya bisa di-deploy.</p>
+<p class="lang-en">For the analytically minded, the ROI has two sides that must be weighed together. Upside: reduced detection latency, broader coverage (an agent watches 100% of transactions, not a sample), and lower manual audit-prep cost. Downside if you skip the identity work: you join the 88% — and in treasury or compliance, a single incident can dwarf the efficiency gains. The expected-value case is strongly positive only when the identity controls are in place before you widen autonomy.</p>
+<p class="lang-id">Buat yang berpikir secara analitis, ROI-nya punya dua sisi yang harus ditimbang bareng. Upside: detection latency yang berkurang, coverage yang lebih luas (agent memantau 100% transaksi, bukan sampel), dan biaya audit-prep manual yang lebih rendah. Downside kalau kamu skip pekerjaan identitasnya: kamu ikut jadi bagian dari 88% itu — dan di treasury atau compliance, satu insiden saja bisa mengalahkan seluruh gain efisiensinya. Expected-value-nya baru benar-benar positif kalau kontrol identitasnya sudah terpasang sebelum kamu memperluas otonomi.</p>
+<p class="lang-en">Recommended sequence: (1) stand up agent identity — scoped credentials plus logging — before any live deployment; (2) start in "watch and alert" mode, where the agent flags but never acts on money movement; (3) measure detection latency, coverage, and false-positive rate against baseline; (4) widen autonomy only where the log proves reliability, always keeping the human approval gate on consequential actions. Do the homework first, and this is one of the safest, highest-leverage places agents earn their keep. Forward this to whoever owns treasury or compliance risk.</p>
+<p class="lang-id">Urutan yang direkomendasikan: (1) bangun identitas agent — kredensial scoped plus logging — sebelum ada live deployment apa pun; (2) mulai di mode "watch and alert", di mana agent menandai tapi nggak pernah bertindak atas pergerakan uang; (3) ukur detection latency, coverage, dan false-positive rate terhadap baseline; (4) perluas otonomi cuma di area yang log-nya sudah membuktikan keandalan, dan tetap jaga human approval gate untuk tindakan yang konsekuensinya besar. Kerjakan PR-nya dulu, dan ini jadi salah satu tempat paling aman dan paling berdampak buat agent membuktikan diri. Teruskan ini ke siapa pun yang memegang risiko treasury atau compliance.</p>
+    <div class="sources">
+      <h4 class="lang-en">Sources</h4><h4 class="lang-id">Sumber</h4>
+      <ul class="lang-en"><li>accelirate.com — ~88% of orgs had an AI-related security incident; ~22% treat agents as identity-bearing with access controls.</li><li>kore.ai; Generative, Inc. (2026) — "a chatbot answers; an agent acts."</li></ul>
+      <ul class="lang-id"><li>accelirate.com — ~88% organisasi pernah kena insiden keamanan terkait AI; ~22% memperlakukan agent sebagai identity-bearing dengan kontrol akses yang layak.</li><li>kore.ai; Generative, Inc. (2026) — "chatbot menjawab; agent bertindak."</li></ul>
+    </div>
     <div class="alt-links">
-      <h4>Other versions of this issue</h4>
-      <p>
-        <a href="issue-6-a.html">Story-led (A) →</a> &nbsp;·&nbsp; 
-        
+      <h4 class="lang-en">Other versions of this issue</h4>
+      <h4 class="lang-id">Versi lain edisi ini</h4>
+      <p class="lang-en">
+        <a href="issue-6-a.html">Story-led (A) →</a> &nbsp;·&nbsp;
+
         <a href="../issues/issue-6.html">Flagship (F) →</a>
+      </p>
+      <p class="lang-id">
+        <a href="issue-6-a.html">Gaya Cerita (A) →</a> &nbsp;·&nbsp;
+
+        <a href="../issues/issue-6.html">Andalan (F) →</a>
       </p>
     </div>
   </div>
 </article>
 <footer class="site-foot">
   <div class="wrap">
-    <p><strong>Finance Forward</strong> — an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</p>
-    <p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
-    <p class="muted small">Issues 1–6 published · Issues 7–15 in progress. Educational internal content; statistics cited per each issue.</p>
+    <p><strong>Finance Forward</strong> <span class="lang-en">— an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</span><span class="lang-id">— surat internal untuk tim Finance &amp; Revenue-Cycle Siloam Hospitals.</span></p>
+    <p class="muted lang-en">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+    <p class="muted lang-id">Chatbot itu menjawab; agent itu bertindak — dan keputusan akhir tetap di tangan manusia.</p>
+    <p class="muted small lang-en">Issues 1–12 published · Issues 13–15 in progress. Educational internal content; statistics cited per each issue.</p>
+    <p class="muted small lang-id">Edisi 1–12 sudah terbit · Edisi 13–15 masih digarap. Konten edukasi internal; statistik dikutip di tiap edisi.</p>
   </div>
 </footer>
+<script src="../assets/lang.js" defer></script>
 </body>
 </html>
