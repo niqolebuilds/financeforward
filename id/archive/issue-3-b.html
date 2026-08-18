@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+<title>Edisi 3 · Data / ROI — Finance Forward</title>
+<meta and="" black="" box"="" come="" content='Seorang analis berhenti takut sama "kotak hitam" begitu dia lihat bagian-bagiannya — dan salah satu bagian itulah sumber penghematannya.' from."="" is="" its="" name="description" of="" once="" one="" parts="" savings="" saw="" she="" the="" those="" where="" —=""/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../../assets/style.css" rel="stylesheet"/>
+</head>
+<body class="reading">
+<nav class="topnav"><div class="wrap"><a href="index.html">← Archive</a>
+<div class="nav-right">
+<span class="crumb"><span>Edisi 03 · Data / ROI</span></span>
+<div class="lang-toggle"><span class="active">ID</span><a href="../../archive/issue-3-b.html">EN</a></div>
+</div>
+</div></nav>
+<article class="article alt accent-teal">
+<div class="wrap narrow">
+<span class="eyebrow"><span>Memahami agent · Data / ROI (Versi B)</span></span>
+
+<h1>Edisi 3 — Anatomi Seorang Agent: reasoning, memory, tools, autonomy</h1>
+<div class="subjectbar">
+
+<p class="subject"><span>Subjek</span> Empat komponen. Salah satunya tempat ROI-nya berada.</p>
+
+<p class="preview">Seorang analis berhenti takut sama "kotak hitam" begitu dia lihat bagian-bagiannya — dan salah satu bagian itulah sumber penghematannya.</p>
+</div>
+
+<p><strong>Seorang analis AP di tim kita menghindari agent sampai dia lihat bahwa itu cuma empat bagian yang punya label, bukan kotak hitam. </strong>Ini anatominya — dan di mana masing-masing bagian berubah jadi nilai.</p>
+<figure class="fig">
+<img alt="Figure 3.1 — Four parts working together: a goal goes in, a checked result comes out." loading="lazy" src="../../assets/img/i3_anatomy.svg"/>
+<figcaption>
+
+<span>Gambar 3.1 — Empat bagian bekerja bersama: satu goal masuk, hasil yang sudah diperiksa keluar.</span>
+
+<span class="src">Sumber data: Skema orisinal (Finance Forward); kerangka komponen agent mengikuti kebiasaan umum industri, 2026.</span>
+</figcaption>
+</figure>
+
+<p>Agent punya empat komponen: reasoning (merencanakan langkah-langkahnya), memory (menyimpan konteks sepanjang tugas), tools (bertindak di dalam sistem beneran), dan autonomy (mengambil langkah berikutnya dalam batas yang ditentukan). Cabut salah satu saja, dan kamu kembali ke chatbot — dan itu persis kenapa chatbot menjawab sementara agent bertindak. Nilainya nggak datang dari reasoning saja; nilainya datang dari tools ditambah autonomy yang dibatasi, bagian-bagian yang bikin dia bisa menyelesaikan pekerjaan, bukan sekadar menjelaskannya.</p>
+
+<p>Coba kuantifikasi. Karena punya tools dan autonomy, satu instance agent bisa menjalankan 3.000+ pengecekan status klaim per hari — setara 5–8 FTE, sekitar $350K per tahun (solventum.com; healthcarefinancenews.com). Chatbot yang cuma mengandalkan reasoning bisa menjelaskan kode denial dengan sangat baik dan menghemat beberapa menit; tapi dia nggak bisa menyentuh portalnya, jadi batas maksimalnya cuma menit, bukan FTE. Anatominya itulah cerita ROI-nya: memory menjaga kualitas tetap tinggi di ribuan pengulangan, tools terhubung ke sistem, autonomy menghilangkan bottleneck manusia di bagian tengah yang repetitif — sementara manusia tetap memegang kedua ujungnya.</p>
+<figure class="fig">
+<img alt="Figure 3.2 — Where the human sits: the agent does the grind, a person owns the decision." loading="lazy" src="../../assets/img/i3_hitl_gate.svg"/>
+<figcaption>
+
+<span>Gambar 3.2 — Di mana posisi manusia: agent yang mengerjakan hal berat, manusia yang punya keputusan.</span>
+
+<span class="src">Sumber data: Skema orisinal; angka beban kerja mengikuti solventum.com / healthcarefinancenews.com (3.000+ pengecekan/hari).</span>
+</figcaption>
+</figure>
+
+<p>Inilah poin yang perlu dipegang pembaca yang analitis: autonomy adalah komponen yang dibatasi, bukan pintu terbuka. Gambar 3.2 menunjukkan desainnya — agent membaca, memeriksa, dan menyiapkan draf dalam skala mesin, lalu berhenti di gerbang human-in-the-loop sebelum dikirim. Satu orang yang ditunjuk menyetujui, dan seluruh rangkaian berjalan di bawah agent identity yang scoped dengan log tindakan yang lengkap. Ini penting bukan cuma soal rasa nyaman: sekitar 88% organisasi pernah kena insiden keamanan terkait AI, tapi cuma sekitar 22% yang memperlakukan agent-nya sebagai identity-bearing dengan kontrol akses yang layak (accelirate.com). Mengerjakan agent identity bukan pemanis opsional — itu kontrol yang membedakan deployment yang aman dari yang jadi headline berita.</p>
+
+<p>Jadi rekomendasi pembangunannya mengikuti langsung dari anatominya. Jalankan bagian-bagian yang menciptakan nilai (tools + memory dalam volume besar), batasi bagian yang menciptakan risiko (autonomy) dengan gerbang manusia, dan lengkapi semuanya dengan agent identity supaya bisa diaudit dengan bersih. Ukur payback-nya di tempat yang benar-benar kelihatan — waktu review manusia per item, biaya per tugas, throughput — bukan di jumlah prompt. Kalau kamu paham empat bagiannya, kamu bisa sekaligus menghitung returnnya dan mengaturnya. Itulah cara finance mengadopsi ini.</p>
+<div class="sources">
+<h4>Sumber</h4>
+
+<ul><li>solventum.com; healthcarefinancenews.com — satu agent ≈ 3.000+ pengecekan/hari ≈ 5–8 FTE (~$350K/tahun).</li><li>accelirate.com — ~88% organisasi pernah kena insiden keamanan terkait AI; ~22% memperlakukan agent sebagai identity-bearing.</li><li>Kerangka umum industri — reasoning, memory, tools, autonomy (2026).</li></ul>
+</div>
+<div class="alt-links">
+
+<h4>Versi lain edisi ini</h4>
+
+<p>
+<a href="issue-3-a.html">Gaya Cerita (A) →</a>  · 
+
+        <a href="../issues/issue-3.html">Andalan (F) →</a>
+</p>
+</div>
+</div>
+</article>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Finance Forward</strong> <span>— surat internal untuk tim Finance &amp; Revenue-Cycle Siloam Hospitals.</span></p>
+
+<p class="muted">Chatbot itu menjawab; agent itu bertindak — dan keputusan akhir tetap di tangan manusia.</p>
+
+<p class="muted small">Edisi 1–12 sudah terbit · Edisi 13–15 masih digarap. Konten edukasi internal; statistik dikutip di tiap edisi.</p>
+</div>
+</footer>
+
+</body>
+</html>

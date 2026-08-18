@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+<title>Edisi 7 · Data / ROI — Finance Forward</title>
+<meta content='Pertanyaan sederhana dari reviewer — "siapa yang tanggung jawab?" — punya jawaban konkret dan bisa diatur. Ini angka-angka di baliknya.' name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../../assets/style.css" rel="stylesheet"/>
+</head>
+<body class="reading">
+<nav class="topnav"><div class="wrap"><a href="index.html">← Archive</a>
+<div class="nav-right">
+<span class="crumb"><span>Edisi 07 · Data / ROI</span></span>
+<div class="lang-toggle"><span class="active">ID</span><a href="../../archive/issue-7-b.html">EN</a></div>
+</div>
+</div></nav>
+<article class="article alt accent-gold">
+<div class="wrap narrow">
+<span class="eyebrow"><span>Memimpin Perubahan · Data / ROI (Versi B)</span></span>
+
+<h1>Edisi 7 — Human-in-the-loop: akuntabilitas tanpa kehilangan kendali</h1>
+<div class="subjectbar">
+
+<p class="subject"><span>Subjek</span> 88% vs 22%: celah kontrol yang menentukan aman-tidaknya agent buat di-scale</p>
+
+<p class="preview">Pertanyaan sederhana dari reviewer — "siapa yang tanggung jawab?" — punya jawaban konkret dan bisa diatur. Ini angka-angka di baliknya.</p>
+</div>
+
+<p>Mulai dari orang yang paling terbebani: reviewer yang bertanya, secara wajar, "kalau agent yang bertindak, siapa yang tanggung jawab?" Jawabannya ada di desain sistemnya, dan desain itu punya angka di baliknya.</p>
+
+<p>Statistik risiko utamanya cukup mengejutkan: sekitar 88% organisasi pernah mengalami insiden keamanan terkait AI, sementara cuma sekitar 22% yang memperlakukan agent-nya sebagai identity-bearing dengan kontrol akses yang layak (Gambar 7.2; accelirate.com, 2026). Celah itu — agent yang kuat tapi tanpa identitas sendiri — adalah sumber risiko agent terbesar sekaligus paling gampang diperbaiki. Agent di login bareng-bareng nggak bisa dilacak; agent dengan kredensial scoped bisa dipertanggungjawabkan sepenuhnya.</p>
+<figure class="fig">
+<img alt="Figure 7.2 — Bar chart: 88% of organizations had an AI security incident; only 22% treat agents as identity-bearing." loading="lazy" src="../../assets/img/i7_identity_gap.png"/>
+<figcaption>
+
+<span>Gambar 7.2 — Celah guardrail yang ditutup identitas agent: beri tiap agent identitasnya sendiri.</span>
+
+<span class="src">Sumber data: accelirate.com — ~88% pernah kena insiden keamanan terkait AI; ~22% memperlakukan agent sebagai identity-bearing.</span>
+</figcaption>
+</figure>
+
+<p>Akuntabilitas ini dibangun lewat dua kontrol. Pertama, level otonomi (Gambar 7.1): tiap agent dijalankan di level tertentu, dari suggest-only sampai act-after-approval, dengan otonomi tanpa pengawasan dibatasi untuk tugas sempit dan berisiko rendah. Level ini keputusan governance, diatur per alur kerja dan bisa diaudit. Kedua, gerbang human-in-the-loop: untuk tindakan yang konsekuensinya besar, ada satu orang yang ditunjuk buat menyetujui sebelum dieksekusi dan bertanggung jawab atas hasilnya — agent-nya cuma penyiap, bukan pengambil keputusan.</p>
+<figure class="fig">
+<img alt="Figure 7.1 — Levels of autonomy, from suggest-only to full autonomy, with a marker showing most finance work sits at act-with-approval." loading="lazy" src="../../assets/img/i7_autonomy_dial.png"/>
+<figcaption>
+
+<span>Gambar 7.1 — Otonomi itu seperti dial yang kamu atur sendiri, dari sekadar-saran sampai otonomi penuh yang dibatasi.</span>
+
+<span class="src">Sumber data: Diagram orisinal, Finance Forward (2026).</span>
+</figcaption>
+</figure>
+
+<p>Buat leadership yang mempertimbangkan scale-up, ini bikin pertanyaan risikonya jadi lebih produktif. Eksposurnya bukan "agent pada dasarnya nggak bisa dikontrol." Tapi "agent yang dijalankan tanpa identitas, penetapan level, dan review-lah yang nggak bisa dikontrol." Masing-masing itu item checklist, bukan lompatan keyakinan buta. Dengan memastikan ketiganya, organisasi bergerak dari yang rentan (88%) menuju yang ter-governance (22%).</p>
+
+<p>Dari sisi ROI: governance yang kuat bukan beban buat adopsi — justru itu yang bikin adopsinya cukup meyakinkan untuk di-scale. Tim yang menanamkan identitas dan review sejak awal terhindar dari insiden, temuan audit, dan erosi kepercayaan yang bikin mayoritas yang rentan itu mandek. Kontrol itu pendorong, bukan rem.</p>
+
+<p>Intinya buat diteruskan: beri tiap agent identitasnya sendiri, tetapkan level otonomi yang jelas per alur kerja, dan pastikan ada manusia yang bertanggung jawab di gerbang. Lakukan tiga hal itu, dan "siapa yang tanggung jawab?" punya jawaban yang jelas dan bisa diaudit — satu orang yang jelas namanya, setiap saat.</p>
+<div class="sources">
+<h4>Sumber</h4>
+
+<ul><li>accelirate.com — ~88% organisasi pernah kena insiden keamanan terkait AI; ~22% memperlakukan agent sebagai identity-bearing.</li></ul>
+</div>
+<div class="alt-links">
+
+<h4>Versi lain edisi ini</h4>
+
+<p>
+<a href="issue-7-a.html">Gaya Cerita (A) →</a>  · 
+        <a href="../issues/issue-7.html">Andalan (F) →</a>
+</p>
+</div>
+</div>
+</article>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Finance Forward</strong> <span>— surat internal untuk tim Finance &amp; Revenue-Cycle Siloam Hospitals.</span></p>
+
+<p class="muted">Chatbot itu menjawab; agent itu bertindak — dan keputusan akhir tetap di tangan manusia.</p>
+
+<p class="muted small">Edisi 1–12 sudah terbit · Edisi 13–15 masih digarap. Konten edukasi internal; statistik dikutip di tiap edisi.</p>
+</div>
+</footer>
+
+</body>
+</html>

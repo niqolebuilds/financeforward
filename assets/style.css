@@ -21,18 +21,16 @@ h1,h2,h3,h4{font-family:var(--serif);line-height:1.15;color:var(--navy);margin:0
 p,li,figcaption,.subject,.preview,.lede,.deck,.mantra,.track-blurb,.card .deck{text-wrap:pretty}
 h1,h2,h3,.card h3{text-wrap:balance}
 
-/* LANGUAGE TOGGLE (EN/ID) */
-html.show-id .lang-en{display:none!important}
-html:not(.show-id) .lang-id{display:none!important}
+/* LANGUAGE SWITCH (EN / ID — separate pages, static link) */
 .lang-toggle{display:inline-flex;align-items:center;background:#eef1f4;border-radius:999px;padding:3px;gap:2px;flex:none}
-.lang-toggle button{border:none;background:transparent;padding:5px 13px;border-radius:999px;cursor:pointer;color:var(--grey);font-family:var(--sans);font-weight:700;font-size:.76rem;letter-spacing:.03em}
-.lang-toggle button.active{background:var(--navy);color:#fff}
-.lang-toggle button:hover:not(.active){color:var(--navy)}
+.lang-toggle a,.lang-toggle span{display:inline-block;border:none;background:transparent;padding:5px 13px;border-radius:999px;color:var(--grey);font-family:var(--sans);font-weight:700;font-size:.76rem;letter-spacing:.03em;text-decoration:none}
+.lang-toggle .active{background:var(--navy);color:#fff}
+.lang-toggle a:hover{color:var(--navy);text-decoration:none}
 .nav-right{display:flex;align-items:center;gap:14px}
 .hero-lang{position:absolute;top:28px;right:24px}
 .hero-lang .lang-toggle{background:rgba(255,255,255,.14)}
-.hero-lang .lang-toggle button{color:#cddbe6}
-.hero-lang .lang-toggle button.active{background:#fff;color:var(--navy)}
+.hero-lang .lang-toggle a{color:#cddbe6}
+.hero-lang .lang-toggle .active{background:#fff;color:var(--navy)}
 @media(max-width:640px){.hero-lang{position:static;margin-bottom:18px;display:flex}}
 
 /* HERO */
