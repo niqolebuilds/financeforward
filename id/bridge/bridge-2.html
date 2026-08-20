@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jembatan 2: Berpikir Seperti Builder — Finance Forward</title>
+<meta name="description" content="Ada empat cara membangun, dari yang sangat sederhana sampai yang lebih rumit — dan kamu hampir selalu mulai dari yang paling sederhana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="reading">
+<nav class="topnav"><div class="wrap"><a href="index.html">← Jembatan</a>
+  <div class="nav-right">
+    <span class="crumb">Jembatan · Jembatan 2</span>
+    <div class="lang-toggle"><span class="active">ID</span><a href="../../bridge/bridge-2.html">EN</a></div>
+  </div>
+</div></nav>
+<article class="article accent-plum">
+  <div class="wrap narrow">
+    <span class="eyebrow">Jembatan · Andalan (rekomendasi)</span>
+    <h1>Jembatan 2 — Berpikir seperti seorang builder</h1>
+    <div class="subjectbar">
+      <p class="subject"><span>Subjek</span> Berpikir seperti seorang builder</p>
+      <p class="preview">Ada empat cara membangun, dari yang sangat sederhana sampai yang lebih rumit — dan kamu hampir selalu mulai dari yang paling sederhana.</p>
+    </div>
+<p>Orang yang baru mulai membangun sering membayangkan versi paling ribet — sistem canggih yang nyambung ke semua database (Gambar B2.1) — jadi kewalahan, dan mundur. Mari kita lakukan kebalikannya. Ada empat cara membangun, dari yang sangat sederhana sampai yang lebih rumit, dan kamu hampir selalu mulai dari yang paling sederhana. Berpikir seperti seorang builder itu kebanyakan soal memilih tool dengan ukuran yang pas dan men-scope-nya cukup kecil buat bisa selesai.</p>
+<figure class="fig">
+  <img src="../../assets/img/ib2_building_patterns.png" alt="Gambar B2.1 — Empat pola membangun sebagai tangga yang naik. Mulai dari Pola 1; naik tingkat cuma kalau perlu." loading="lazy">
+  <figcaption>Gambar B2.1 — Empat pola membangun sebagai tangga yang naik. Mulai dari Pola 1; naik tingkat cuma kalau perlu.<span class="src">Sumber data: The AI Hackathon Guide (2026); modelcontextprotocol.io.</span></figcaption>
+</figure>
+
+<p>Empat polanya, dalam bahasa finance yang sederhana dan urutan usaha: Pola 1 — fitur AI sederhana (prompt masuk, output berguna: ringkas denial ini, tulis draf balasan ini). Pola 2 — RAG (jawaban yang diakarkan ke kebijakan dan kontrak kita sendiri, lengkap kutipan). Pola 3 — agent (satu tujuan menggerakkan kerja multi-langkah yang pakai tool, dengan kamu yang review). Pola 4 — MCP (konektor universal — "USB-C buat AI" — yang bikin agent aman menjangkau sistem kita). Aturannya: mulai dari Pola 1 dan naik tingkat cuma kalau masalahnya beneran butuh. Kebanyakan proyek hackathon yang bagus itu Pola 1 yang dikerjain dengan baik.</p>
+<p><strong>Masalah mana, dan sekecil apa.</strong> Buat milih apa yang layak dibangun, pakai AI Opportunity Framework — kandidat kuat melibatkan banyak teks atau percakapan, keputusan berulang, riset manual, atau proses yang lambat (Gambar B2.2). Finance dan RCM banjir keempatnya. Terus scope dengan ketat: sasaran SMALL (satu workflow, bukan seluruh pekerjaanmu), REAL (masalah yang beneran kamu punya), VISIBLE (rasa sakit yang orang rasakan), dan DEMO-ABLE (bisa kamu tunjukkan bekerja langsung). Proyek yang kena keempatnya bisa selesai dalam satu hackathon dan ngalahin ide ambisius yang nggak pernah kamu jalankan.</p>
+<figure class="fig">
+  <img src="../../assets/img/ib2_scope_criteria.png" alt="Gambar B2.2 — Scope untuk SMALL, REAL, VISIBLE, DEMO-ABLE; cari teks, keputusan berulang, riset manual, dan proses yang lambat." loading="lazy">
+  <figcaption>Gambar B2.2 — Scope untuk SMALL, REAL, VISIBLE, DEMO-ABLE; cari teks, keputusan berulang, riset manual, dan proses yang lambat.<span class="src">Sumber data: The AI Hackathon Guide (Karadimitriou, 2026).</span></figcaption>
+</figure>
+
+<p>Ada alasan buat bersikeras mulai dari bawah di tangga ini, dan itu adalah failure mode paling umum: pattern-chasing. Tim sering langsung ambil agent atau MCP karena kedengarannya canggih, padahal fitur Pola 1 sebenarnya bisa menyelesaikannya dalam sepersekian waktu. Perlakukan kecanggihan sebagai biaya, bukan lencana kebanggaan — tiap anak tangga ke atas membeli kapabilitas dengan harga usaha dan risiko gagal. Mulai sederhana, buktikan nilainya, naik cuma berdasarkan bukti. Urutan itu adalah prediktor terbesar apakah sebuah ide jadi demo yang beneran jalan saat show-and-tell.</p>
+<p>Tetap pegang guardrail-nya waktu kamu mendesain. Pola apapun yang kamu pilih, manusia tetap ada di dalam loop — tool Pola 1 ngasih kamu draf buat dicek; agent mengantrekan kerjanya buat persetujuanmu; nggak ada yang menyentuh akun beneran tanpa seorang manusia. Men-scope kecil bukan cuma soal selesai tepat waktu; itu juga yang bikin build pertamamu aman dan gampang diawasi. Small, real, dan bisa direview adalah titik manis di mana semangat dan kehati-hatian bisa berjabat tangan.</p>
+<p>Jadi berpikir seperti seorang builder itu bukan soal teknis (Gambar B2.3). Ini dua pertanyaan yang kamu ajukan ke tugas nyebelinmu: pola paling sederhana apa yang bisa bantu (biasanya Pola 1), dan gimana caranya bikin scope ini cukup kecil buat didemoin? Mulai sederhana, tetap kecil, naik tingkat cuma kalau perlu. Kamu udah punya judgment buat nge-pas-in ukuran — itu insting yang sama yang kamu pakai buat masalah lain di pekerjaanmu. Edisi berikutnya, hal terakhir yang berdiri antara kamu dan bulan Desember: keyakinan bahwa kamu berhak ada di ruangan itu.</p>
+<figure class="fig">
+  <img src="../../assets/img/ib2_ladder.png" alt="Gambar B2.3 — Empat pola sebagai tangga; mulai dari 1, naik cuma berdasarkan bukti." loading="lazy">
+  <figcaption>Gambar B2.3 — Empat pola sebagai tangga; mulai dari 1, naik cuma berdasarkan bukti.<span class="src">Sumber data: The AI Hackathon Guide (2026); modelcontextprotocol.io.</span></figcaption>
+</figure>
+
+    <div class="sources"><h4>Sumber</h4><ul><li>Empat pola membangun (Simple feature, RAG, Agents, MCP); AI Opportunity Framework; scoping SMALL/REAL/VISIBLE/DEMO-ABLE — The AI Hackathon Guide (Karadimitriou, 2026), https://kosmas10.github.io/ai-hackathon-guide/</li>
+<li>MCP sebagai standar terbuka ("USB-C buat AI") — modelcontextprotocol.io.</li></ul></div>
+    <div class="alt-links">
+      <h4>Versi lain edisi ini</h4>
+      <p>Ide yang sama, sudut pandang beda. <a href="../archive/bridge-2-a.html">Gaya Cerita (A) →</a> &nbsp;·&nbsp; <a href="../archive/bridge-2-b.html">Data / ROI (B) →</a></p>
+    </div>
+    <div class="pager">
+      <a href="bridge-1.html">← Jembatan 1</a>
+      <a href="bridge-3.html">Jembatan 3 →</a>
+    </div>
+  </div>
+</article>
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Finance Forward</strong> — surat internal untuk tim Finance &amp; Revenue-Cycle Siloam Hospitals.</p>
+    <p class="muted">Chatbot itu menjawab; agent itu bertindak — dan keputusan akhir tetap di tangan manusia.</p>
+    <p class="muted small">Edisi 1–15 sudah terbit. Konten edukasi internal; statistik dikutip di tiap edisi.</p>
+  </div>
+</footer>
+</body>
+</html>

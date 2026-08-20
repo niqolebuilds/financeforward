@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jembatan 2 · Data / ROI — Finance Forward</title>
+<meta name="description" content="Di balik proyek hackathon yang bagus ada kebenaran yang membosankan: mereka di-scope dengan baik, bukan dibangun dengan cara yang canggih.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body class="reading">
+<nav class="topnav"><div class="wrap"><a href="../index.html">← Jembatan</a>
+  <div class="nav-right">
+    <span class="crumb">Jembatan 2 · Data / ROI</span>
+    <div class="lang-toggle"><span class="active">ID</span><a href="../../../bridge/archive/bridge-2-b.html">EN</a></div>
+  </div>
+</div></nav>
+<article class="article alt accent-plum">
+  <div class="wrap narrow">
+    <span class="eyebrow">Jembatan · Data / ROI (Versi B)</span>
+    <h1>Jembatan 2 — Berpikir seperti seorang builder</h1>
+    <div class="subjectbar">
+      <p class="subject"><span>Subjek</span> Disiplin scoping di balik proyek hackathon yang bisa selesai</p>
+      <p class="preview">Di balik proyek hackathon yang bagus ada kebenaran yang membosankan: mereka di-scope dengan baik, bukan dibangun dengan cara yang canggih.</p>
+    </div>
+<p>Di balik proyek hackathon yang bagus ada kebenaran yang membosankan: mereka di-scope dengan baik, bukan dibangun dengan cara yang canggih. Berpikir seperti seorang builder itu disiplin dalam mengambil keputusan, dan dimulai dari tahu empat opsimu berdasarkan urutan usaha (Gambar B2.1). Pola 1 — fitur AI sederhana (prompt masuk, output berguna). Pola 2 — RAG (jawaban yang diakarkan ke dokumen kita sendiri, dengan kutipan). Pola 3 — agent (satu tujuan menggerakkan workflow multi-langkah yang pakai tool). Pola 4 — MCP (konektor universal — "USB-C buat AI" — yang bikin agent aman menjangkau sistem kita). Aturannya sederhana: mulai dari Pola 1 dan naik tingkat cuma kalau masalahnya menuntut.</p>
+<figure class="fig">
+  <img src="../../../assets/img/ib2_building_patterns.png" alt="Gambar B2.1 — Empat pola membangun sebagai tangga yang naik. Mulai dari Pola 1; naik tingkat cuma kalau perlu." loading="lazy">
+  <figcaption>Gambar B2.1 — Empat pola membangun sebagai tangga yang naik. Mulai dari Pola 1; naik tingkat cuma kalau perlu.<span class="src">Sumber data: The AI Hackathon Guide (2026); modelcontextprotocol.io.</span></figcaption>
+</figure>
+
+<p>Tiap pola punya profil biaya-dan-kapabilitas. Pola 1 usahanya nyaris nol dan menyelesaikan porsi masalah nyata yang mengejutkan besarnya — ini harus jadi hipotesis default-mu. Pola 2 (RAG) menambah sedikit usaha buat dapat pengakaran dan kutipan, ideal di mana jawaban harus bisa dilacak ke kebijakan kita. Pola 3 (agent) menambah orkestrasi buat menangani workflow multi-langkah. Pola 4 (MCP) adalah lapisan integrasi buat terhubung ke sistem live. Usaha dan risiko naik seiring kamu naik tangga, jadi langkah yang memaksimalkan ROI adalah pola paling rendah yang menyelesaikan masalahnya, bukan yang paling mengesankan.</p>
+<p>Buat milih masalah mana yang layak dibangun sama sekali, pakai AI Opportunity Framework (Gambar B2.2). Kandidat kuat punya empat ciri: banyak teks atau percakapan, keputusan berulang, riset manual, atau proses yang lambat. Itulah ciri khas tugas-tugas di mana AI menciptakan nilai, dan pekerjaan finance/RCM penuh dengan itu — klaim dan kebijakan (teks), merutekan dan mencocokkan (keputusan berulang), cek status dan eligibilitas (riset manual), dan closing yang berhari-hari (proses lambat). Skor backlog-mu terhadap empat ini dan pemenangnya bakal muncul sendiri.</p>
+<figure class="fig">
+  <img src="../../../assets/img/ib2_scope_criteria.png" alt="Gambar B2.2 — Scope untuk SMALL, REAL, VISIBLE, DEMO-ABLE; cari teks, keputusan berulang, riset manual, dan proses yang lambat." loading="lazy">
+  <figcaption>Gambar B2.2 — Scope untuk SMALL, REAL, VISIBLE, DEMO-ABLE; cari teks, keputusan berulang, riset manual, dan proses yang lambat.<span class="src">Sumber data: The AI Hackathon Guide (Karadimitriou, 2026).</span></figcaption>
+</figure>
+
+<p>Terus scope dengan ketat. Proyek yang layak-hackathon itu SMALL (satu workflow), REAL (masalah asli), VISIBLE (rasa sakit yang dirasakan), dan DEMO-ABLE (bisa ditunjukkan bekerja langsung). Ini bukan cuma saran buat acara; ini manajemen risiko. Proyek yang small, real, visible, demo-able punya probabilitas selesai yang tinggi dan sinyal sukses yang jelas — persis yang mengubah prototipe jadi momentum. Proyek yang terlalu ambisius gagal diam-diam dan bikin patah semangat; yang di-scope dengan baik akan jadi kenyataan dan menginspirasi build berikutnya.</p>
+<p>Framework ini juga melindungi dari failure mode paling umum: pattern-chasing (Gambar B2.3). Tim sering langsung lompat ke agent atau MCP karena kedengarannya canggih, padahal fitur Pola 1 sebenarnya bisa menyelesaikan masalahnya dalam sepersekian waktu. Builder yang disiplin memperlakukan kecanggihan sebagai biaya, bukan lencana kebanggaan — tiap anak tangga ke atas membeli kapabilitas dengan harga usaha dan risiko gagal. Mulai dari bawah, buktikan nilainya, naik cuma berdasarkan bukti. Urutan itu adalah prediktor terbesar apakah ide hackathon jadi demo yang beneran jalan.</p>
+<figure class="fig">
+  <img src="../../../assets/img/ib2_ladder.png" alt="Gambar B2.3 — Empat pola sebagai tangga; mulai dari 1, naik cuma berdasarkan bukti." loading="lazy">
+  <figcaption>Gambar B2.3 — Empat pola sebagai tangga; mulai dari 1, naik cuma berdasarkan bukti.<span class="src">Sumber data: The AI Hackathon Guide (2026); modelcontextprotocol.io.</span></figcaption>
+</figure>
+
+<p>Buat seorang team lead, ini mengubah "ayo kita AI-in" yang samar jadi disiplin portofolio: saring backlog dengan Opportunity Framework, cocokkan tiap ide yang lolos ke pola paling rendah yang cukup, dan terapkan scoping small/real/visible/demo-able. Proses itu konsisten menghasilkan proyek yang bisa selesai dan bersinyal tinggi — jenis yang membangun kapabilitas dan keyakinan, bukan kekecewaan yang mahal.</p>
+<p>Forward ini ke timmu sebagai rubrik pembangunan: saring dengan Opportunity Framework, mulai dari Pola 1, dan scope small/real/visible/demo-able. Itu resep yang bisa diulang buat menang.</p>
+    <div class="sources"><h4>Sumber</h4><ul><li>Empat pola membangun (Simple feature, RAG, Agents, MCP); AI Opportunity Framework; scoping SMALL/REAL/VISIBLE/DEMO-ABLE — The AI Hackathon Guide (Karadimitriou, 2026), https://kosmas10.github.io/ai-hackathon-guide/</li>
+<li>MCP sebagai standar terbuka ("USB-C buat AI") — modelcontextprotocol.io.</li></ul></div>
+    <div class="alt-links">
+      <h4>Versi lain edisi ini</h4>
+      <p>
+        <a href="bridge-2-a.html">Gaya Cerita →</a> &nbsp;·&nbsp;
+        <a href="../bridge-2.html">Andalan (F) →</a>
+      </p>
+    </div>
+  </div>
+</article>
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Finance Forward</strong> — surat internal untuk tim Finance &amp; Revenue-Cycle Siloam Hospitals.</p>
+    <p class="muted">Chatbot itu menjawab; agent itu bertindak — dan keputusan akhir tetap di tangan manusia.</p>
+    <p class="muted small">Edisi 1–15 sudah terbit. Konten edukasi internal; statistik dikutip di tiap edisi.</p>
+  </div>
+</footer>
+</body>
+</html>
