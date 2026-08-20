@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bonus: The Builder's Toolkit — Finance Forward</title>
+<meta name="description" content="A plain-language toolkit reference for the December 2026 Siloam AI Hackathon — matched to your comfort level, from no-code to code.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="reading">
+
+<nav class="topnav"><div class="wrap"><a href="index.html">← The Bridge</a>
+  <div class="nav-right">
+    <span class="crumb">The Bridge · Bonus Toolkit</span>
+    <div class="lang-toggle"><span class="active">EN</span><a href="../id/bridge/toolkit.html">ID</a></div>
+  </div>
+</div></nav>
+<article class="article accent-plum">
+  <div class="wrap narrow">
+    <span class="eyebrow">The Bridge · Bonus Toolkit</span>
+    <h1>The Builder's Toolkit</h1>
+    <p>A plain-language reference, matched to your comfort level — a companion to the Bridge edition, for the December 2026 Siloam AI Hackathon.</p>
+    <h2>Match the tool to the builder</h2>
+    <p>This is a reference, not a reading assignment — skim it, find the row that sounds like you, and pick one thing to try. You do not need to be an engineer to build something useful. The single most important idea here is: start where you are. A non-technical analyst and a software engineer will reach for different tools, and both are right. The tools below are grouped from the most approachable (no coding at all) to the most technical (for people who write software), with quick-start stacks and a hospital data-safety box at the end. When in doubt, start at the top of the list and only climb as far as your project actually needs.</p>
+<figure class="fig">
+  <img src="../assets/img/ib_builder_map.png" alt="Figure — A quick map of where different builders tend to start. You can always climb the ladder later." loading="lazy">
+  <figcaption>Figure — A quick map of where different builders tend to start. You can always climb the ladder later.<span class="src">Data source: Finance Forward (2026); The AI Hackathon Guide (Karadimitriou, 2026).</span></figcaption>
+</figure>
+    <div class="toolkit-cat">
+      <h3>No-code app builders</h3>
+      <p class="cat-blurb">Best for PMs and analysts who want to prototype a working app fast — no coding.</p>
+      <div class="tool-grid">
+        <div class="tool-card">Claude Cowork</div>
+        <div class="tool-card">Claude Artifacts</div>
+      </div>
+    </div>
+    <div class="toolkit-cat">
+      <h3>AI platforms &amp; power features</h3>
+      <p class="cat-blurb">Build genuinely useful things without a coding environment at all.</p>
+      <div class="tool-grid">
+        <div class="tool-card">NotebookLM</div>
+        <div class="tool-card">Claude Cowork (RAG)</div>
+      </div>
+    </div>
+    <div class="toolkit-cat">
+      <h3>Automation &amp; integration</h3>
+      <p class="cat-blurb">Connect AI to the tools your work already lives in — visually, no code.</p>
+      <div class="tool-grid">
+        <div class="tool-card">Zapier</div>
+        <div class="tool-card">Make</div>
+      </div>
+    </div>
+    <div class="toolkit-cat">
+      <h3>AI APIs &amp; model providers</h3>
+      <p class="cat-blurb">The foundational building blocks — used when a tool needs to call a model directly.</p>
+    </div>
+    <div class="toolkit-cat">
+      <h3>Developer frameworks &amp; orchestration</h3>
+      <p class="cat-blurb">For the more technical — teams building deeper agent features in code.</p>
+      <div class="tool-grid">
+        <div class="tool-card">MCP (Model Context Protocol)</div>
+      </div>
+    </div>
+    <div class="toolkit-cat">
+      <h3>AI-powered coding tools</h3>
+      <p class="cat-blurb">AI pair-programmers — for engineers building and shipping software.</p>
+      <div class="tool-grid">
+        <div class="tool-card">Claude Code</div>
+      </div>
+    </div>
+    <h2>Quick-start stacks</h2>
+    <p>Not sure how to begin? Pick the goal that matches and start there.</p>
+    <p><strong>Fastest no-code prototype:</strong> open Claude Cowork or Claude Artifacts, describe the tool you want, and iterate. You'll have something demoable in an afternoon.</p>
+    <p><strong>Fastest RAG prototype (answers from our own documents):</strong> upload your policies or contracts to NotebookLM (or use RAG inside Claude Cowork) and ask questions grounded in them, with citations.</p>
+    <p><strong>Fastest agent prototype (a multi-step workflow):</strong> start in Claude Cowork with a clear goal and your files; layer in a no-code automation (Zapier/Make) or an API only if the workflow truly needs to reach other systems.</p>
+    <p><strong>Not sure where to start at all?</strong> Start with Claude Cowork if you don't code, or Claude Code if you do. Both let you go from idea to working prototype quickly, and both keep you in control of every step.</p>
+<figure class="fig">
+  <img src="../assets/img/ib_decision_guide.png" alt="Figure — A simple decision guide: what do you want to build, and where to start." loading="lazy">
+  <figcaption>Figure — A simple decision guide: what do you want to build, and where to start.<span class="src">Data source: Finance Forward (2026).</span></figcaption>
+</figure>
+    <h2>Before you build: hospital data-safety essentials</h2>
+    <p>We are a hospital, so this box matters more than any tool on the list. Please read it, and treat it as non-negotiable for anything you build — at the hackathon or after.</p>
+    <div class="safety-box">
+      <h4>Data safety</h4>
+      <p>One line to remember: build boldly on fake data, and treat real data with the same care we always have.</p>
+      <p>The safeguards we spent the whole series learning — human-in-the-loop, least access, clear approval — apply from your very first prototype.</p>
+    </div>
+    <h2>A closing word</h2>
+    <p>You do not need to master this list. You need to pick one tool that fits where you are, and try one small idea. That's the whole point of the hackathon, and this reference exists only to remove the "but which tool?" hesitation. Start at the top, stay small, keep a human in the loop, protect our patients' data — and build something. We can't wait to see what you make in December.</p>
+    <div class="sources">
+      <h4>Sources</h4>
+      <ul>
+        <li>Builder's toolkit, patterns, and quick-start guidance — The AI Hackathon Guide (Karadimitriou, Nova Science Ventures, 2026), https://kosmas10.github.io/ai-hackathon-guide/</li>
+        <li>Hackathon hosting, starter kits, and continuity — Virtasant, "How to Create and Host an AI Hackathon in 6 Weeks" (Feb 2026), https://www.virtasant.com/ai-today/how-to-create-and-host-an-ai-hackathon-in-6-weeks</li>
+        <li>MCP open standard ("USB-C for AI") — modelcontextprotocol.io.</li>
+        <li>AI adoption and cost trends — Stanford AI Index 2025 (hai.stanford.edu).</li>
+        <li>Tool names are referenced for orientation only; inclusion is not an endorsement, and availability/features change over time.</li>
+      </ul>
+    </div>
+  </div>
+</article>
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Finance Forward</strong> — an internal letter for the Siloam Hospitals Finance &amp; Revenue-Cycle team.</p>
+    <p class="muted">A chatbot answers; an agent acts — and a person still owns the decision.</p>
+    <p class="muted small">Issues 1–15 published. Educational internal content; statistics cited per each issue.</p>
+  </div>
+</footer>
+</body>
+</html>
